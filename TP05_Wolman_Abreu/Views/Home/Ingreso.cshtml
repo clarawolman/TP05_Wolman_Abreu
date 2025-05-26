@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Ingreso";
+}
+
+<h2>Ingresá tu nombre para comenzar</h2>
+<form method="post">
+    <input type="text" name="nombre" />
+    <button type="submit">Entrar</button>
+</form>
+@if (ViewBag.Error != null)
+{
+    <p style="color:red;">@ViewBag.Error</p>
+}

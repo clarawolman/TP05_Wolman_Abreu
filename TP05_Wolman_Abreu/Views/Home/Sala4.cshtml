@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Sala 4 - Lago";
+}
+<h2>Sala 4 - Bajo el lago</h2>
+<p>Arrastrá el hechizo correcto al lugar correcto.</p>
+
+<div>
+    <div id="lumos" draggable="true" ondragstart="drag(event)">Lumos</div>
+    <div id="reparo" draggable="true" ondragstart="drag(event)">Reparo</div>
+    <div id="alohomora" draggable="true" ondragstart="drag(event)">Alohomora</div>
+</div>
+
+<div>
+    <p>Cueva: <span ondrop="drop(event)" ondragover="allowDrop(event)" id="cueva"></span></p>
+    <p>Puerta mágica: <span ondrop="drop(event)" ondragover="allowDrop(event)" id="puerta"></span></p>
+</div>
+
+<form method="post">
+    <input type="hidden" name="respuesta" value="correcta" />
+    <button type="submit">Confirmar combinación</button>
+</form>
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.textContent = data;
+}
+</script>

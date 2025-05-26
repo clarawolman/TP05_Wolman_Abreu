@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Sala 2 - Cáliz";
+}
+<h2>Sala 2 - El Cáliz de Fuego</h2>
+<p>Arrastrá tu nombre al cáliz.</p>
+
+<div id="area">
+    <div id="nombre" draggable="true" ondragstart="drag(event)" style="padding:10px; background:lightblue;">Tu Nombre</div>
+    <img id="caliz" src="/img/caliz.png" style="width:100px;" ondrop="drop(event)" ondragover="allowDrop(event)" />
+</div>
+
+<form method="post" id="formResultado" style="display:none;">
+    <button name="respuesta" value="correcta">Nombre aceptado por el cáliz</button>
+</form>
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    if (data === "nombre") {
+        document.getElementById("formResultado").style.display = "block";
+    }
+}
+</script>

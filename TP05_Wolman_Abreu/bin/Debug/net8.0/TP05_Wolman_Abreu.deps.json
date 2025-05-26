@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TP05_Wolman_Abreu/1.0.0": {
+        "runtime": {
+          "TP05_Wolman_Abreu.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TP05_Wolman_Abreu/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
