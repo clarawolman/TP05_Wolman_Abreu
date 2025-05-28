@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
+      "PackagePath": "staticwebassets\\img\\hogwarts.jpg"
+    },
+    {
       "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

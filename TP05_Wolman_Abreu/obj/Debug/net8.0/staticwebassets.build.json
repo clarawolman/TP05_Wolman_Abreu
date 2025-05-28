@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c5Ekmg7tf8H8F5B8IKcxmp26csxC953cHT0I5/Dgvp8=",
+  "Hash": "WHHKCmIsnIK6bJq18RoXKzKs5fLqzjMNY+tVfqPle2I=",
   "Source": "TP05_Wolman_Abreu",
   "BasePath": "_content/TP05_Wolman_Abreu",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/hogwarts.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hogwarts.jpg"
     },
     {
       "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",

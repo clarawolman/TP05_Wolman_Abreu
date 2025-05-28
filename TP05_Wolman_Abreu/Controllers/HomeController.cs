@@ -35,11 +35,22 @@ namespace EscapeRoom.Controllers
             return View();
         }
 
+        private bool ValidarAcceso(int sala)
+        {
+            int? salaActual = HttpContext.Session.GetInt32("SalaActual");
+            return salaActual != null && salaActual >= sala;
+        }
+
+        private void CargarDatosSala(int numero)
+        {
+            ViewBag.Sala = numero;
+            ViewBag.TotalSalas = 7;
+        }
+
         public IActionResult Sala1()
         {
             if (!ValidarAcceso(1)) return RedirectToAction("Index");
-            ViewBag.Sala = 1;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(1);
             return View();
         }
 
@@ -52,16 +63,14 @@ namespace EscapeRoom.Controllers
                 return RedirectToAction("Sala2");
             }
             ViewBag.Mensaje = "Respuesta incorrecta. ¡Intentá de nuevo!";
-            ViewBag.Sala = 1;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(1);
             return View();
         }
 
         public IActionResult Sala2()
         {
             if (!ValidarAcceso(2)) return RedirectToAction("Index");
-            ViewBag.Sala = 2;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(2);
             return View();
         }
 
@@ -74,16 +83,14 @@ namespace EscapeRoom.Controllers
                 return RedirectToAction("Sala3");
             }
             ViewBag.Mensaje = "No aceptado aún.";
-            ViewBag.Sala = 2;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(2);
             return View();
         }
 
         public IActionResult Sala3()
         {
             if (!ValidarAcceso(3)) return RedirectToAction("Index");
-            ViewBag.Sala = 3;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(3);
             return View();
         }
 
@@ -96,16 +103,14 @@ namespace EscapeRoom.Controllers
                 return RedirectToAction("Sala4");
             }
             ViewBag.Mensaje = "Respuesta incorrecta. Baldosa ruidosa.";
-            ViewBag.Sala = 3;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(3);
             return View();
         }
 
         public IActionResult Sala4()
         {
             if (!ValidarAcceso(4)) return RedirectToAction("Index");
-            ViewBag.Sala = 4;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(4);
             return View();
         }
 
@@ -118,16 +123,14 @@ namespace EscapeRoom.Controllers
                 return RedirectToAction("Sala5");
             }
             ViewBag.Mensaje = "Combinación incorrecta.";
-            ViewBag.Sala = 4;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(4);
             return View();
         }
 
         public IActionResult Sala5()
         {
             if (!ValidarAcceso(5)) return RedirectToAction("Index");
-            ViewBag.Sala = 5;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(5);
             return View();
         }
 
@@ -140,16 +143,14 @@ namespace EscapeRoom.Controllers
                 return RedirectToAction("Sala6");
             }
             ViewBag.Mensaje = "Respuesta incorrecta.";
-            ViewBag.Sala = 5;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(5);
             return View();
         }
 
         public IActionResult Sala6()
         {
             if (!ValidarAcceso(6)) return RedirectToAction("Index");
-            ViewBag.Sala = 6;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(6);
             return View();
         }
 
@@ -159,24 +160,16 @@ namespace EscapeRoom.Controllers
             if (respuesta == "correcta")
             {
                 HttpContext.Session.SetInt32("SalaActual", 7);
-                return RedirectToAction("Victoria");
+                return RedirectToAction("Sala7");
             }
             ViewBag.Mensaje = "Secuencia incorrecta.";
-            ViewBag.Sala = 6;
-            ViewBag.TotalSalas = 7;
+            CargarDatosSala(6);
             return View();
         }
-
         public IActionResult Victoria()
         {
             if (!ValidarAcceso(7)) return RedirectToAction("Index");
             return View();
-        }
-
-        private bool ValidarAcceso(int sala)
-        {
-            int? salaActual = HttpContext.Session.GetInt32("SalaActual");
-            return salaActual != null && salaActual >= sala;
         }
     }
 }
