@@ -1,12 +1,20 @@
 @{
     ViewData["Title"] = "Ingreso";
 }
-
-<h2>Ingresá tu nombre para comenzar</h2>
+<div class="Ingreso">
+<h2>Ingresá tu nombre y elegí tu casa para comenzar</h2>
 <form method="post">
-    <input type="text" name="nombre" />
-    <button type="submit">Entrar</button>
+    <input type="text" name="nombre" placeholder="Nombre" required />
+    <div class="casas">
+        <label><input type="radio" name="casa" value="Gryffindor" required /> Gryffindor</label>
+        <label><input type="radio" name="casa" value="Slytherin" required /> Slytherin</label>
+        <label><input type="radio" name="casa" value="Ravenclaw" required /> Ravenclaw</label>
+        <label><input type="radio" name="casa" value="Hufflepuff" required /> Hufflepuff</label>
+    </div>
+    <p><input type="submit" value="Enviar"></p>
 </form>
+
+</div>
 @if (ViewBag.Error != null)
 {
     <p style="color:red;">@ViewBag.Error</p>

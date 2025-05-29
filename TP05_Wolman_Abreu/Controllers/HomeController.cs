@@ -16,25 +16,27 @@ namespace EscapeRoom.Controllers
             return View();
         }
 
-        public IActionResult Ingreso()
+        public IActionResult InstruccionesJuego()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Ingreso(string nombre)
+        public IActionResult Ingreso(string nombre, string casa)
         {
-            if (!string.IsNullOrWhiteSpace(nombre))
+            if (!string.IsNullOrWhiteSpace(nombre) && !string.IsNullOrWhiteSpace(casa))
             {
                 HttpContext.Session.SetString("Nombre", nombre);
+                HttpContext.Session.SetString("Casa", casa);
                 HttpContext.Session.SetInt32("SalaActual", 1);
                 HttpContext.Session.SetString("TimerInicio", DateTime.Now.ToString());
-                return RedirectToAction("Sala1");
+
+                // Redirige a la primera sala según la casa
+                return RedirectToAction($"Sala1{casa}");
             }
-            ViewBag.Error = "Por favor, ingresá un nombre.";
+            ViewBag.Error = "Por favor, ingresá tu nombre y elegí una casa.";
             return View();
         }
-
         private bool ValidarAcceso(int sala)
         {
             int? salaActual = HttpContext.Session.GetInt32("SalaActual");
@@ -47,24 +49,36 @@ namespace EscapeRoom.Controllers
             ViewBag.TotalSalas = 7;
         }
 
-        public IActionResult Sala1()
+        public IActionResult Sala1Gryffindor()
         {
             if (!ValidarAcceso(1)) return RedirectToAction("Index");
             CargarDatosSala(1);
-            return View();
+            ViewBag.Casa = HttpContext.Session.GetString("Gryffindor");
+            return View("Sala1Gryffindor");
         }
 
-        [HttpPost]
-        public IActionResult Sala1(string respuesta)
+        public IActionResult Sala1Slytherin()
         {
-            if (respuesta == "correcta")
-            {
-                HttpContext.Session.SetInt32("SalaActual", 2);
-                return RedirectToAction("Sala2");
-            }
-            ViewBag.Mensaje = "Respuesta incorrecta. ¡Intentá de nuevo!";
+            if (!ValidarAcceso(1)) return RedirectToAction("Index");
             CargarDatosSala(1);
-            return View();
+            ViewBag.Casa = HttpContext.Session.GetString("Slytherin");
+            return View("Sala1Slytherin");
+        }
+
+        public IActionResult Sala1Ravenclaw()
+        {
+            if (!ValidarAcceso(1)) return RedirectToAction("Index");
+            CargarDatosSala(1);
+            ViewBag.Casa = HttpContext.Session.GetString("Ravenclaw");
+            return View("Sala1Ravenclaw");
+        }
+
+        public IActionResult Sala1Hufflepuff()
+        {
+            if (!ValidarAcceso(1)) return RedirectToAction("Index");
+            CargarDatosSala(1);
+            ViewBag.Casa = HttpContext.Session.GetString("Hufflepuff");
+            return View("Sala1Hufflepuff");
         }
 
         public IActionResult Sala2()

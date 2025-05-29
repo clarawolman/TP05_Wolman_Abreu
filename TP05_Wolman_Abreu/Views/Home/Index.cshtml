@@ -1,10 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Inicio";
 }
-<nav class="Inicio">
+<div class="Inicio">
     <h1>Escape Room: Torneo de los Tres Magos</h1>
     <img src="wwwroot/img/hogwarts.jpg" alt="Imagen inicio"/>
-    <p>Bienvenido al desafío mágico. ¿Estás listo?</p>
-    <a href="/Home/Ingreso">Comenzar</a> 
-    <a href="/Home/Integrantes">Integrantes</a>
-</nav>
+    <p>Biendivenido al desafío mágico. ¿Estás listo?</p>
+    <a href='@Url.Action("InstruccionesJuego")'>¿Cómo jugar?</a>
+    <p>Abrí la carta para comenzar</p>
+    <img src="img/cartacerrada.jpg" usemap="#mapaCarta" width="600" />
+    <map name="mapaCarta">
+        <area shape="rect" coords="200,240,310,340" href= '@Url.Action("Ingreso")'alt="Abrí la carta" />
+    </map>
+</div>

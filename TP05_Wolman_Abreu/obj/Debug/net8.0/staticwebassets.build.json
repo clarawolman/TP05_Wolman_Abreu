@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WHHKCmIsnIK6bJq18RoXKzKs5fLqzjMNY+tVfqPle2I=",
+  "Hash": "RnsjYi16CalSf3CVNjJdEw3VgE5Zajf1X393nwufiUA=",
   "Source": "TP05_Wolman_Abreu",
   "BasePath": "_content/TP05_Wolman_Abreu",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TP05_Wolman_Abreu\\wwwroot",
       "Source": "TP05_Wolman_Abreu",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -55,10 +55,67 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabierta.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/cartaabierta.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cartaabierta.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartacerrada.jpg",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/cartacerrada.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cartacerrada.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gyffindorscenery.jpg",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/gyffindorscenery.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\gyffindorscenery.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/hogwarts.jpg",
       "AssetKind": "All",
@@ -74,10 +131,48 @@
       "OriginalItemSpec": "wwwroot\\img\\hogwarts.jpg"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varita.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/varita.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\varita.png"
+    },
+    {
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varitacursor.png",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/varitacursor.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\varitacursor.png"
+    },
+    {
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -93,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -112,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -131,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -150,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -169,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -188,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -207,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -226,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -245,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -264,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -283,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -302,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

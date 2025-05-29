@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Sala 1 - Memotest";
+}
+<div class="gryffindor">
+    <h2>Sala 1 - Memotest</h2>
+    <p>Hacé clic en la carta para activar el juego.</p>
+    <div style="position: relative; display: inline-block;">
+        <img src="/img/carta.png" width="600" />
+        <a href="/Home/Comienzo" style="
+            position: absolute;
+            top: 120px;
+            left: 180px;
+            width: 100px;
+            height: 100px;
+            display: block;
+            z-index: 2;" 
+            title="Abrí la carta"></a>
+</div>
+
+    <div id="memotest" style="display:none;">
+    <p>Emparejá las cartas relacionadas con Hogwarts.</p>
+    <!-- Simulamos un memotest con botones -->
+    <form method="post">
+        <button name="respuesta" value="correcta">Resolver Memotest</button>
+    </form>
+    </div>
+
+    <script>
+    function mostrarMemotest() {
+    document.getElementById("memotest").style.display = "block";
+    }
+    </script>
+</div>

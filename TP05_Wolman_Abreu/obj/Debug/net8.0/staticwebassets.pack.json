@@ -1,67 +1,87 @@
 {
   "Files": [
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabierta.jpg",
+      "PackagePath": "staticwebassets\\img\\cartaabierta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartacerrada.jpg",
+      "PackagePath": "staticwebassets\\img\\cartacerrada.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gyffindorscenery.jpg",
+      "PackagePath": "staticwebassets\\img\\gyffindorscenery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
       "PackagePath": "staticwebassets\\img\\hogwarts.jpg"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varita.png",
+      "PackagePath": "staticwebassets\\img\\varita.png"
+    },
+    {
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varitacursor.png",
+      "PackagePath": "staticwebassets\\img\\varitacursor.png"
+    },
+    {
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "Z:\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

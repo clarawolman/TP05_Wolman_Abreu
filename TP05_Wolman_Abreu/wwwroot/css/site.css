@@ -1,5 +1,36 @@
-
+/*cosas que no estan saliendo: 
+  - cursor
+  - background image
+  - falta bastante homecontroller
+  - video a checkear
+*/
+* {
+  cursor: url('/img/varitacursor.png'), 0, 0, auto;
+}
 .Inicio {
   width: 100%;
   background-image: "wwwroot/img/hogwarts.jpg";
+  background-size: cover;
+}
+.Instrucciones{
+  width: 100%;
+  background-image: "wwwroot/img/hogwarts.jpg";
+  background-size:cover;
+}
+.Ingreso {
+  object-fit:cover;
+  width:100;
+  background-image: "wwwroot/img/cartaabierta.jpg";
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+area {
+    cursor: pointer;
 }
