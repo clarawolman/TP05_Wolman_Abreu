@@ -4,23 +4,27 @@
   - falta bastante homecontroller
   - video a checkear
 */
-* {
-  cursor: url('/img/varitacursor.png'), 0, 0, auto;
-}
+  area {
+    cursor: pointer;
+    border: 2px solid white;
+  }
+area:hover {
+    cursor: pointer;
+  }
 .Inicio {
   width: 100%;
-  background-image: "wwwroot/img/hogwarts.jpg";
+  background-image: url('/img/hogwarts.jpg');
   background-size: cover;
 }
 .Instrucciones{
   width: 100%;
-  background-image: "wwwroot/img/hogwarts.jpg";
+  background-image: url('/img/hogwarts.jpg');
   background-size:cover;
 }
 .Ingreso {
   object-fit:cover;
   width:100;
-  background-image: "wwwroot/img/cartaabierta.jpg";
+  background-image: url('wwwroot/img/cartaabierta.jpg');
 }
 video {
     position: fixed;
@@ -31,6 +35,49 @@ video {
     object-fit: cover;
     z-index: -1;
 }
-area {
-    cursor: pointer;
+
+/* Estilos para las salas comunes */
+.sala-gryffindor {
+  background-color: #740001;
+  color: #D3A625;
+  padding: 20px;
+}
+
+.sala-slytherin {
+  background-color: #1A472A;
+  color: #AAAAAA;
+  padding: 20px;
+}
+
+.sala-ravenclaw {
+  background-color: #0E1A40;
+  color: #946B2D;
+  padding: 20px;
+}
+
+.sala-hufflepuff {
+  background-color: #ECB939;
+  color: #372E29;
+  padding: 20px;
+}
+
+.puzzle-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.btn-resolver {
+  background-color: #D3A625;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-resolver:hover {
+  opacity: 0.9;
 }

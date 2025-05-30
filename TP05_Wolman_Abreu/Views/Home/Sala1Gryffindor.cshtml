@@ -1,22 +1,23 @@
 @{
     ViewData["Title"] = "Sala 1 - Memotest";
 }
+<style>
+    area {
+        cursor: pointer !important;
+    }
+    area:hover {
+        cursor: pointer !important;
+    }
+    .gryffindor map area {
+        cursor: pointer !important;
+    }
+</style>
 <div class="gryffindor">
     <h2>Sala 1 - Memotest</h2>
-    <p>Hacé clic en la carta para activar el juego.</p>
-    <div style="position: relative; display: inline-block;">
-        <img src="/img/carta.png" width="600" />
-        <a href="/Home/Comienzo" style="
-            position: absolute;
-            top: 120px;
-            left: 180px;
-            width: 100px;
-            height: 100px;
-            display: block;
-            z-index: 2;" 
-            title="Abrí la carta"></a>
-</div>
-
+    <img src="/img/gyffindorscenery.jpg" usemap="#mapaGryffindor" width=100% />
+    <map name="mapaGryffindor">
+        <area shape="rect" coords="320,400,420,10" href='@Url.Action("Ingreso")' alt="Encontrar juego" style="cursor: pointer;" />
+    </map>
     <div id="memotest" style="display:none;">
     <p>Emparejá las cartas relacionadas con Hogwarts.</p>
     <!-- Simulamos un memotest con botones -->

@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Sala Común de Hufflepuff";
+}
+
+<div class="sala-hufflepuff">
+    <h1>Bienvenido a la Sala Común de Hufflepuff</h1>
+    <p>Te encuentras en la acogedora sala común cerca de las cocinas, donde la lealtad y el trabajo duro son nuestros valores fundamentales.</p>
+    
+    <div class="puzzle-container">
+        <h2>Para continuar tu aventura, demuestra tu dedicación:</h2>
+        <p class="task">Encuentra las plantas mágicas correctas para preparar una poción de herbología.</p>
+        
+        <form method="post" action="@Url.Action("Sala2")">
+            <div class="plantas-selection">
+                <label><input type="checkbox" name="plantas" value="mandragora"> Mandrágora</label>
+                <label><input type="checkbox" name="plantas" value="tentacula"> Tentácula Venenosa</label>
+                <label><input type="checkbox" name="plantas" value="bubotuberculos"> Bubotubérculos</label>
+            </div>
+            <input type="submit" value="Preparar Poción" class="btn-resolver" />
+        </form>
+    </div>
+</div>

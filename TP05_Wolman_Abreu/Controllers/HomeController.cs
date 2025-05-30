@@ -20,7 +20,10 @@ namespace EscapeRoom.Controllers
         {
             return View();
         }
-
+        public IActionResult Ingreso()
+        {
+            return View();
+        }
         [HttpPost]
         public IActionResult Ingreso(string nombre, string casa)
         {
@@ -79,6 +82,60 @@ namespace EscapeRoom.Controllers
             CargarDatosSala(1);
             ViewBag.Casa = HttpContext.Session.GetString("Hufflepuff");
             return View("Sala1Hufflepuff");
+        }
+        private static readonly List<string> AllCards = new List<string>
+        {
+            "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg",
+            "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"
+        };
+
+        public IActionResult SalaMemotest()
+        {
+            if (HttpContext.Session.GetString("CartasMezcladas") == null)
+            {
+                var mezcladas = AllCards.OrderBy(_ => Guid.NewGuid()).ToList();
+                HttpContext.Session.SetString("CartasMezcladas", string.Join(",", mezcladas));
+                HttpContext.Session.SetString("Volteadas", ""); // Índices de cartas dadas vuelta
+                HttpContext.Session.SetString("Encontradas", ""); // Índices de cartas encontradas
+                HttpContext.Session.SetInt32("UltimaCarta", -1); // Última carta seleccionada
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult TocarCarta(int index)
+        {
+            var cartas = HttpContext.Session.GetString("CartasMezcladas").Split(',').ToList();
+            var volteadas = HttpContext.Session.GetString("Volteadas").Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
+            var encontradas = HttpContext.Session.GetString("Encontradas").Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
+            var ultima = HttpContext.Session.GetInt32("UltimaCarta") ?? -1;
+
+            if (volteadas.Contains(index) || encontradas.Contains(index))
+                return RedirectToAction("SalaMemotest");
+
+            volteadas.Add(index);
+
+            if (ultima == -1)
+            {
+                HttpContext.Session.SetInt32("UltimaCarta", index);
+            }
+            else
+            {
+                if (cartas[ultima] == cartas[index])
+                {
+                    encontradas.Add(ultima);
+                    encontradas.Add(index);
+                }
+
+                HttpContext.Session.SetInt32("UltimaCarta", -1);
+                volteadas = new List<int>(); // reiniciar volteadas
+            }
+
+            HttpContext.Session.SetString("Volteadas", string.Join(",", volteadas));
+            HttpContext.Session.SetString("Encontradas", string.Join(",", encontradas));
+
+            return RedirectToAction("SalaMemotest");
         }
 
         public IActionResult Sala2()

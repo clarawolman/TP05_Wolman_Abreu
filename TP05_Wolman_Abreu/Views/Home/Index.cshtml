@@ -1,9 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Inicio";
 }
+<style>
+    area {
+        cursor: pointer;
+    }
+    area:hover {
+        cursor: pointer;
+    }
+</style>
 <div class="Inicio">
     <h1>Escape Room: Torneo de los Tres Magos</h1>
-    <img src="wwwroot/img/hogwarts.jpg" alt="Imagen inicio"/>
     <p>Biendivenido al desafío mágico. ¿Estás listo?</p>
     <a href='@Url.Action("InstruccionesJuego")'>¿Cómo jugar?</a>
     <p>Abrí la carta para comenzar</p>
