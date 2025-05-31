@@ -1,0 +1,81 @@
+@{
+    ViewData["Title"] = "Memotest";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mb-4">Encuentra los pares de cartas</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <div class="memotest-grid">
+                @{
+                    var cartas = Context.Session.GetString("CartasMezcladas")?.Split(',') ?? new string[0];
+                    var volteadas = Context.Session.GetString("Volteadas")?.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList() ?? new List<int>();
+                    var encontradas = Context.Session.GetString("Encontradas")?.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList() ?? new List<int>();
+                    var salaActual = Context.Session.GetInt32("SalaActual");
+
+                    for (int i = 0; i < cartas.Length; i++)
+                    {
+                        var mostrarCarta = volteadas.Contains(i) || encontradas.Contains(i);
+                        var imagenMostrar = mostrarCarta ? cartas[i] : "reverso.jpg";
+                        <div class="card-container">
+                            <form asp-action="TocarCarta" method="post" class="m-1">
+                                <input type="hidden" name="index" value="@i" />
+                                <button type="submit" class="btn p-0 @(mostrarCarta ? "disabled" : "")" @(mostrarCarta ? "disabled" : "")>
+                                    <img src="~/images/cartas/@imagenMostrar" class="carta-memotest" alt="Carta" />
+                                </button>
+                            </form>
+                        </div>
+                    }
+                }
+            </div>
+
+            @if (encontradas?.Count == cartas?.Length)
+            {
+                <div class="text-center mt-4">
+                    <h3 class="text-success mb-3">¡Felicitaciones! Has encontrado todos los pares</h3>
+                    <a asp-action="Sala2" class="btn btn-primary btn-lg">
+                        Continuar a la siguiente sala
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .memotest-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .carta-memotest {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .card-container {
+        aspect-ratio: 3/4;
+    }
+
+    .btn:hover .carta-memotest {
+        transform: scale(1.05);
+    }
+
+    .btn.disabled {
+        cursor: default;
+    }
+
+    .btn.disabled .carta-memotest {
+        transform: none;
+    }
+</style> 

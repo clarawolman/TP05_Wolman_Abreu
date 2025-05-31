@@ -1,21 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Inicio";
 }
-<style>
-    area {
-        cursor: pointer;
-    }
-    area:hover {
-        cursor: pointer;
-    }
-</style>
+
 <div class="Inicio">
-    <h1>Escape Room: Torneo de los Tres Magos</h1>
+    <h1>Torneo de los Tres Magos</h1>
     <p>Biendivenido al desafío mágico. ¿Estás listo?</p>
     <a href='@Url.Action("InstruccionesJuego")'>¿Cómo jugar?</a>
     <p>Abrí la carta para comenzar</p>
-    <img src="img/cartacerrada.jpg" usemap="#mapaCarta" width="600" />
-    <map name="mapaCarta">
-        <area shape="rect" coords="200,240,310,340" href= '@Url.Action("Ingreso")'alt="Abrí la carta" />
-    </map>
+    <div class="carta-container">
+        <img src="img/cartacerrada.jpg" alt="Carta cerrada" class="carta-base"/>
+        <a href='@Url.Action("Ingreso")' class="sello-link">
+            <img src="img/clickCarta.jpg" alt="Click para abrir la carta" class="sello-imagen"/>
+        </a>
+    </div>
 </div>

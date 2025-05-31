@@ -1,21 +1,108 @@
 @{
     ViewData["Title"] = "Ingreso";
 }
-<div class="Ingreso">
-<h2>Ingresá tu nombre y elegí tu casa para comenzar</h2>
-<form method="post">
-    <input type="text" name="nombre" placeholder="Nombre" required />
-    <div class="casas">
-        <label><input type="radio" name="casa" value="Gryffindor" required /> Gryffindor</label>
-        <label><input type="radio" name="casa" value="Slytherin" required /> Slytherin</label>
-        <label><input type="radio" name="casa" value="Ravenclaw" required /> Ravenclaw</label>
-        <label><input type="radio" name="casa" value="Hufflepuff" required /> Hufflepuff</label>
-    </div>
-    <p><input type="submit" value="Enviar"></p>
-</form>
 
-</div>
 @if (ViewBag.Error != null)
 {
     <p style="color:red;">@ViewBag.Error</p>
 }
+
+<div class="ingreso-container">
+    <div class="form-container">
+        <form method="post" id="casaForm">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-4">
+                <label class="form-label">Selecciona tu casa:</label>
+                <div class="escudos-container">
+                    <input type="hidden" id="casaSeleccionada" name="casa" required>
+                    <div class="escudo escudo-grande" onclick="seleccionarCasa('Gryffindor', this)">
+                        <img src="~/img/gryffindor.png" alt="Gryffindor" class="escudo-img">
+                    </div>
+                    <div class="escudo" onclick="seleccionarCasa('Slytherin', this)">
+                        <img src="~/img/slytherin.png" alt="Slytherin" class="escudo-img">
+                    </div>
+                    <div class="escudo escudo-grande" onclick="seleccionarCasa('Ravenclaw', this)">
+                        <img src="~/img/ravenclaw.png" alt="Ravenclaw" class="escudo-img">
+                    </div>
+                    <div class="escudo" onclick="seleccionarCasa('Hufflepuff', this)">
+                        <img src="~/img/hufflepuff.png" alt="Hufflepuff" class="escudo-img">
+                    </div>
+                </div>
+            </div>
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" disabled id="submitBtn">Comenzar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+.escudos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.escudo {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.escudo:hover {
+    transform: scale(1.05);
+}
+
+.escudo.selected {
+    border-color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.escudo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.escudo-grande {
+    transform: scale(1.1);
+    margin-top: 10px;
+}
+
+.escudo-grande:hover {
+    transform: scale(1.15);
+}
+</style>
+
+<script>
+function seleccionarCasa(casa, elemento) {
+    // Remover la selección anterior
+    document.querySelectorAll('.escudo').forEach(e => e.classList.remove('selected'));
+    
+    // Seleccionar el nuevo escudo
+    elemento.classList.add('selected');
+    
+    // Actualizar el valor del input hidden
+    document.getElementById('casaSeleccionada').value = casa;
+    
+    // Habilitar el botón si hay un nombre ingresado
+    const nombreInput = document.getElementById('nombre');
+    document.getElementById('submitBtn').disabled = !nombreInput.value;
+}
+
+// Habilitar el botón solo cuando hay nombre y casa seleccionada
+document.getElementById('nombre').addEventListener('input', function() {
+    const casaSeleccionada = document.getElementById('casaSeleccionada').value;
+    document.getElementById('submitBtn').disabled = !this.value || !casaSeleccionada;
+});
+</script>

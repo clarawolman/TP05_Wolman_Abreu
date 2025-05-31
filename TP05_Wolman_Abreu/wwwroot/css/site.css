@@ -22,9 +22,12 @@ area:hover {
   background-size:cover;
 }
 .Ingreso {
-  object-fit:cover;
-  width:100;
-  background-image: url('wwwroot/img/cartaabierta.jpg');
+  width: 100%;
+  height: 100vh;
+  background-image: url('/img/cartaabierta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 video {
     position: fixed;
@@ -39,8 +42,13 @@ video {
 /* Estilos para las salas comunes */
 .sala-gryffindor {
   background-color: #740001;
+  background-image: url('/img/gryffindoresc.png');
+  background-size: cover;
   color: #D3A625;
   padding: 20px;
+}
+.sala-gryffindor p {
+  margin-bottom: 60%;
 }
 
 .sala-slytherin {
@@ -80,4 +88,97 @@ video {
 
 .btn-resolver:hover {
   opacity: 0.9;
+}
+
+/* Estilos para la página de ingreso */
+.ingreso-container {
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-image: url('../img/cartaabierta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.form-container {
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    z-index: 1;
+    margin: 20% 0 150px 0;
+    text-align: left;
+}
+.form-container .form-control,
+.form-container .form-select {
+    border: 2px solid #dcb8a1;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.form-container .btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    background-color: #dcb8a1(0, 0, 0, 0.7);
+    border: 2px solid #dcb8a1;
+}
+
+.carta-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.carta-base {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.carta-container .sello-link {
+    position: absolute;
+    top: 60.5%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.carta-container .sello-imagen {
+    max-width: 113px;
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+/* Estilos para el link de Gryffindor */
+.gryffindor-link {
+    position: absolute;
+    top: 113.5%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+}
+
+.gryffindor-imagen {
+    max-width: 85%;
+    height: auto;
+    border: none;
+    outline: none;
 }

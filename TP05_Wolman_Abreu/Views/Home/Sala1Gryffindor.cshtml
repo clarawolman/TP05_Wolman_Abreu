@@ -1,34 +1,15 @@
 @{
-    ViewData["Title"] = "Sala 1 - Memotest";
+    ViewData["Title"] = "Sala 1 - Gryffindor";
 }
-<style>
-    area {
-        cursor: pointer !important;
-    }
-    area:hover {
-        cursor: pointer !important;
-    }
-    .gryffindor map area {
-        cursor: pointer !important;
-    }
-</style>
-<div class="gryffindor">
-    <h2>Sala 1 - Memotest</h2>
-    <img src="/img/gyffindorscenery.jpg" usemap="#mapaGryffindor" width=100% />
-    <map name="mapaGryffindor">
-        <area shape="rect" coords="320,400,420,10" href='@Url.Action("Ingreso")' alt="Encontrar juego" style="cursor: pointer;" />
-    </map>
-    <div id="memotest" style="display:none;">
-    <p>Emparejá las cartas relacionadas con Hogwarts.</p>
-    <!-- Simulamos un memotest con botones -->
-    <form method="post">
-        <button name="respuesta" value="correcta">Resolver Memotest</button>
-    </form>
-    </div>
 
-    <script>
-    function mostrarMemotest() {
-    document.getElementById("memotest").style.display = "block";
-    }
-    </script>
+<div class="sala-gryffindor">
+    <h2>Sala 1 - Gryffindor</h2>
+    <div class="row mt-4">
+        <div class="col-12">
+            <p>El coraje no es no tener miedo... es entrar igual.</p>
+            <a href='@Url.Action("SalaMemotest")' class="gryffindor-link">
+                <img src="/img/clickGryff.jpeg" alt="Click para abrir la carta" class="gryffindor-imagen"/>
+            </a>
+        </div>
+    </div>
 </div>

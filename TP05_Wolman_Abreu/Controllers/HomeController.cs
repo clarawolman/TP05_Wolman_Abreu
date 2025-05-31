@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace EscapeRoom.Controllers
 {
@@ -83,21 +85,49 @@ namespace EscapeRoom.Controllers
             ViewBag.Casa = HttpContext.Session.GetString("Hufflepuff");
             return View("Sala1Hufflepuff");
         }
-        private static readonly List<string> AllCards = new List<string>
+        private static readonly Dictionary<string, string> CardPairs = new Dictionary<string, string>
         {
-            "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg",
-            "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"
+            { "nombre_hipogrifo.jpg", "imagen_hipogrifo.jpg" },
+            { "nombre_thestral.jpg", "imagen_thestral.jpg" },
+            { "nombre_basilisco.jpg", "imagen_basilisco.jpg" }
         };
+
+        private static readonly List<string> AllCards = new List<string>();
+
+        static HomeController()
+        {
+            // Inicializar AllCards con todos los nombres e imágenes
+            foreach (var pair in CardPairs)
+            {
+                AllCards.Add(pair.Key);   // Carta con nombre
+                AllCards.Add(pair.Value); // Carta con imagen
+            }
+        }
+
+        private bool SonPareja(string carta1, string carta2)
+        {
+            return (CardPairs.ContainsKey(carta1) && CardPairs[carta1] == carta2) ||
+                   (CardPairs.ContainsKey(carta2) && CardPairs[carta2] == carta1);
+        }
 
         public IActionResult SalaMemotest()
         {
+            if (!ValidarAcceso(1)) return RedirectToAction("Index");
+
             if (HttpContext.Session.GetString("CartasMezcladas") == null)
             {
                 var mezcladas = AllCards.OrderBy(_ => Guid.NewGuid()).ToList();
                 HttpContext.Session.SetString("CartasMezcladas", string.Join(",", mezcladas));
-                HttpContext.Session.SetString("Volteadas", ""); // Índices de cartas dadas vuelta
-                HttpContext.Session.SetString("Encontradas", ""); // Índices de cartas encontradas
-                HttpContext.Session.SetInt32("UltimaCarta", -1); // Última carta seleccionada
+                HttpContext.Session.SetString("Volteadas", "");
+                HttpContext.Session.SetString("Encontradas", "");
+                HttpContext.Session.SetInt32("UltimaCarta", -1);
+            }
+
+            var encontradas = HttpContext.Session.GetString("Encontradas")?.Split(',', StringSplitOptions.RemoveEmptyEntries).Length ?? 0;
+            if (encontradas == AllCards.Count)
+            {
+                HttpContext.Session.SetInt32("SalaActual", 2);
+                return RedirectToAction("Sala2");
             }
 
             return View();
@@ -107,11 +137,28 @@ namespace EscapeRoom.Controllers
         public IActionResult TocarCarta(int index)
         {
             var cartas = HttpContext.Session.GetString("CartasMezcladas").Split(',').ToList();
-            var volteadas = HttpContext.Session.GetString("Volteadas").Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
-            var encontradas = HttpContext.Session.GetString("Encontradas").Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
+            var volteadas = HttpContext.Session.GetString("Volteadas")
+                .Split(',', StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToList();
+            var encontradas = HttpContext.Session.GetString("Encontradas")
+                .Split(',', StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToList();
             var ultima = HttpContext.Session.GetInt32("UltimaCarta") ?? -1;
 
-            if (volteadas.Contains(index) || encontradas.Contains(index))
+            // Si la carta ya está encontrada, no hacer nada
+            if (encontradas.Contains(index))
+                return RedirectToAction("SalaMemotest");
+
+            // Limpiar cartas volteadas anteriores que no coincidieron
+            if (volteadas.Count == 2)
+            {
+                volteadas.Clear();
+            }
+
+            // Si la carta ya está volteada en este turno, no hacer nada
+            if (volteadas.Contains(index))
                 return RedirectToAction("SalaMemotest");
 
             volteadas.Add(index);
@@ -122,14 +169,19 @@ namespace EscapeRoom.Controllers
             }
             else
             {
-                if (cartas[ultima] == cartas[index])
+                if (SonPareja(cartas[ultima], cartas[index]))
                 {
                     encontradas.Add(ultima);
                     encontradas.Add(index);
-                }
+                    volteadas.Clear();
 
+                    // Verificar si el juego está completo
+                    if (encontradas.Count == AllCards.Count)
+                    {
+                        HttpContext.Session.SetInt32("SalaActual", 2);
+                    }
+                }
                 HttpContext.Session.SetInt32("UltimaCarta", -1);
-                volteadas = new List<int>(); // reiniciar volteadas
             }
 
             HttpContext.Session.SetString("Volteadas", string.Join(",", volteadas));
