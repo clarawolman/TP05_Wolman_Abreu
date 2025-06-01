@@ -1,26 +1,38 @@
 /*cosas que no estan saliendo: 
-  - cursor
-  - background image
+  - cursor de varita
   - falta bastante homecontroller
   - video a checkear
 */
-  area {
+
+/* Generales */
+area {
     cursor: pointer;
     border: 2px solid white;
-  }
+}
 area:hover {
     cursor: pointer;
-  }
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Estilos para Index (página principal) */
 .Inicio {
   width: 100%;
   background-image: url('/img/hogwarts.jpg');
   background-size: cover;
 }
+
+/* Estilos para InstruccionesJuego */
 .Instrucciones{
   width: 100%;
   background-image: url('/img/hogwarts.jpg');
   background-size:cover;
 }
+
+/* Estilos para Ingreso (se ingresa nombre y casa)*/
 .Ingreso {
   width: 100%;
   height: 100vh;
@@ -29,118 +41,54 @@ area:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 
-/* Estilos para las salas comunes */
-.sala-gryffindor {
-  background-color: #740001;
-  background-image: url('/img/gryffindoresc.png');
-  background-size: cover;
-  color: #D3A625;
-  padding: 20px;
-}
-.sala-gryffindor p {
-  margin-bottom: 60%;
-}
-
-.sala-slytherin {
-  background-color: #1A472A;
-  color: #AAAAAA;
-  padding: 20px;
-}
-
-.sala-ravenclaw {
-  background-color: #0E1A40;
-  color: #946B2D;
-  padding: 20px;
-}
-
-.sala-hufflepuff {
-  background-color: #ECB939;
-  color: #372E29;
-  padding: 20px;
-}
-
-.puzzle-container {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.btn-resolver {
-  background-color: #D3A625;
-  color: #000;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.btn-resolver:hover {
-  opacity: 0.9;
-}
-
-/* Estilos para la página de ingreso */
+/* Estilos para Ingreso (contenedor principal) */
 .ingreso-container {
-    width: 100%;
-    min-height: 100vh;
-    display: block;
-    background-image: url('../img/cartaabierta.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow-y: auto;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  background-image: url('../img/cartaabierta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-y: auto;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-
+/* Estilos del formulario en Ingreso.cshtml */
 .form-container {
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 400px;
-    width: 90%;
-    position: relative;
-    z-index: 1;
-    margin: 20% 0 150px 0;
-    text-align: left;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  margin: 20% 0 150px 0;
+  text-align: left;
 }
+
 .form-container .form-control,
 .form-container .form-select {
-    border: 2px solid #dcb8a1;
-    padding: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 1rem;
-    width: 100%;
-    text-align: left;
+  border: 2px solid #dcb8a1;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: left;
 }
 
 .form-container .btn-primary {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-    background-color: #dcb8a1(0, 0, 0, 0.7);
-    border: 2px solid #dcb8a1;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  background-color: #dcb8a1(0, 0, 0, 0.7);
+  border: 2px solid #dcb8a1;
 }
-
+/* Estilos para la carta en Ingreso.cshtml */
 .carta-container {
     position: relative;
     display: inline-block;
@@ -168,17 +116,114 @@ body {
     outline: none;
 }
 
-/* Estilos para el link de Gryffindor */
-.gryffindor-link {
-    position: absolute;
-    top: 113.5%;
-    left: 52.5%;
-    transform: translate(-50%, -50%);
+/* Estilos compartidos para los párrafos en las salas de las casas */
+.sala-gryffindor p, .sala-ravenclaw p, .sala-hufflepuff p, .sala-slytherin p {
+  margin-bottom: 60%;
 }
 
-.gryffindor-imagen {
+/* Estilos para Gryffindor */
+.sala-gryffindor {
+  background-color: #740001;
+  background-image: url('/img/gryffindoresc.png');
+  background-size: cover;
+  color: #D3A625;
+  padding: 20px;
+}
+.gryffindor-link{
+  position: absolute;
+  top: 113.5%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+}
+.gryffindor-imagen{
     max-width: 85%;
     height: auto;
     border: none;
     outline: none;
+}
+
+/* Estilos para Slytherin */
+.sala-slytherin {
+  background-color: #1A472A;
+  color: #AAAAAA;
+  background-image: url('/img/slytherinesc.png');
+  background-size: cover;
+  padding: 20px;
+}
+.slytherin-link {
+  position: absolute;
+  top: 110.9%;
+  left: 51.5%;
+  transform: translate(-50%, -50%);
+}
+.slytherin-imagen {
+  max-width: 86.3%;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+/* Estilos para Ravenclaw */
+.sala-ravenclaw {
+  background-color: #0E1A40;
+  color: #946B2D;
+  background-image: url('/img/ravenclawesc.png');
+  background-size: cover;
+  padding: 20px;
+}
+.ravenclaw-link {
+  position: absolute;
+  top: 112.6%;
+  left: 53.5%;
+  transform: translate(-50%, -50%);
+}
+.ravenclaw-imagen {
+  max-width: 82.5%;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+/* Estilos para Hufflepuff */
+.sala-hufflepuff {
+  background-color: #ECB939;
+  color: #372E29;
+  background-image: url('/img/hufflepuffesc.png');
+  background-size: cover;
+  padding: 20px;
+}
+.hufflepuff-link {
+  position: absolute;
+  top: 112.8%;
+  left: 52.5%;
+  transform: translate(-50%, -50%);
+}
+.hufflepuff-imagen {
+  max-width: 87%;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+/* Estilos para contenedores de puzzles - usado en Sala2.cshtml, Sala3.cshtml, Sala4.cshtml */
+.puzzle-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Botón resolver usado en las salas de puzzles */
+.btn-resolver {
+  background-color: #D3A625;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-resolver:hover {
+  opacity: 0.9;
 }

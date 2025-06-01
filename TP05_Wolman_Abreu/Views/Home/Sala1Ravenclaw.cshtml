@@ -1,18 +1,15 @@
 @{
-    ViewData["Title"] = "Sala Común de Ravenclaw";
+    ViewData["Title"] = "Sala 1 - Ravenclaw";
 }
 
 <div class="sala-ravenclaw">
-    <h1>Bienvenido a la Sala Común de Ravenclaw</h1>
-    <p>Te encuentras en la Torre de Ravenclaw, donde el conocimiento y la sabiduría son nuestros mayores tesoros.</p>
-    
-    <div class="puzzle-container">
-        <h2>Para avanzar, deberás resolver este acertijo:</h2>
-        <p class="riddle">"Cuanto más me quitas, más grande me vuelvo. ¿Qué soy?"</p>
-        
-        <form method="post" action="@Url.Action("Sala2")">
-            <input type="text" name="respuesta" placeholder="Tu respuesta aquí..." required />
-            <input type="submit" value="Resolver" class="btn-resolver" />
-        </form>
+    <h2>Sala 1 - Ravenclaw</h2>
+    <div class="row mt-4">
+        <div class="col-12">
+            <p>Solo la lógica te guía al final</p>
+            <a href='@Url.Action("SalaMemotest")' class="ravenclaw-link">
+                <img src="/img/clickRaven.jpeg" alt="Click para abrir memotest" class="ravenclaw-imagen"/>
+            </a>
+        </div>
     </div>
 </div>
