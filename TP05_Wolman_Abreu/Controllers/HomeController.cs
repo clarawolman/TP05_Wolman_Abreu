@@ -194,7 +194,28 @@ namespace EscapeRoom.Controllers
         {
             if (!ValidarAcceso(2)) return RedirectToAction("Index");
             CargarDatosSala(2);
-            return View();
+            return View("Sala2Caliz");
+        }
+
+        [HttpPost]
+        public IActionResult TirarNombreAlCaliz()
+        {
+            // El jugador “tiró” su nombre. Vamos a la escena de las pociones
+            return View("Sala2Pociones");
+        }
+
+        [HttpPost]
+        public IActionResult ResolverPociones(string pocion)
+        {
+            if (pocion == "correcta")
+            {
+                // Ganó. Vamos a la escena final
+                return View("Sala2Final");
+            }
+
+            // Falló. Mostrar mensaje y repetir la escena de pociones
+            ViewBag.Mensaje = "Esa poción no era la correcta. Intentalo de nuevo.";
+            return View("Sala2Pociones");
         }
 
         [HttpPost]
@@ -205,10 +226,9 @@ namespace EscapeRoom.Controllers
                 HttpContext.Session.SetInt32("SalaActual", 3);
                 return RedirectToAction("Sala3");
             }
-            ViewBag.Mensaje = "No aceptado aún.";
-            CargarDatosSala(2);
-            return View();
+            return RedirectToAction("Sala2");
         }
+
 
         public IActionResult Sala3()
         {
