@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu.csproj",
+      "projectUniqueName": "C:\\Users\\49359\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu.csproj",
       "projectName": "TP05_Wolman_Abreu",
-      "projectPath": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu.csproj",
+      "projectPath": "C:\\Users\\49359\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu.csproj",
       "packagesPath": "C:\\Users\\49359\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\49359\\OneDrive\\Desktop\\2025\\prog\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\obj\\",
+      "outputPath": "C:\\Users\\49359\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\49359\\AppData\\Roaming\\NuGet\\NuGet.Config",

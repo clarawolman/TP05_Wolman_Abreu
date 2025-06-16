@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Sala 2 - Final";
+}
+
+<div class="sala-final">
+    <h2>¡Felicidades!</h2>
+    <p>Has superado el desafío del Cáliz de Fuego.</p>
+
+    <div class="caliz-victoria">
+        <img src="/img/caliz_brilla.png" alt="Cáliz brillante" class="caliz-brillante">
+    </div>
+
+    <form method="post" asp-action="Sala3">
+        <button type="submit" class="btn btn-primary btn-lg">Avanzar a la siguiente sala</button>
+    </form>
+</div>
+
+<style>
+.sala-final {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.caliz-victoria {
+    margin: 40px 0;
+}
+
+.caliz-brillante {
+    width: 200px;
+    animation: brillar 2s infinite;
+}
+
+@@keyframes brillar {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.5); }
+    100% { filter: brightness(1); }
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+</style>

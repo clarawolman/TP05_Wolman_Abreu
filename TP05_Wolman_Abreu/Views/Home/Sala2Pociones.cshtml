@@ -1,0 +1,117 @@
+@{
+    ViewData["Title"] = "Sala 2 - Pociones";
+}
+
+<div class="sala-pociones">
+    <h2>El Desafío de las Pociones</h2>
+    <p>Una de estas pociones te permitirá avanzar. Las otras son peligrosas.</p>
+
+    <div class="pociones-container">
+        <img src="/img/mesa_pociones.png" alt="Mesa de pociones" class="mesa-pociones">
+        
+        <div class="pociones-botones">
+            <form method="post" asp-action="ResolverPociones">
+                <button name="pocion" value="roja" class="btn-pocion">
+                    <img src="/img/pocion_roja.png" alt="Poción roja">
+                    <span>Poción roja</span>
+                </button>
+                <button name="pocion" value="correcta" class="btn-pocion">
+                    <img src="/img/pocion_correcta.png" alt="Poción correcta">
+                    <span>Poción del medio</span>
+                </button>
+                <button name="pocion" value="negra" class="btn-pocion">
+                    <img src="/img/pocion_negra.png" alt="Poción negra">
+                    <span>Poción negra</span>
+                </button>
+                <button name="pocion" value="verde" class="btn-pocion">
+                    <img src="/img/pocion_verde.png" alt="Poción verde">
+                    <span>Poción verde</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    @if (ViewBag.Mensaje != null)
+    {
+        <div class="mensaje-error">
+            <p>@ViewBag.Mensaje</p>
+        </div>
+    }
+</div>
+
+<style>
+.sala-pociones {
+    text-align: center;
+    padding: 20px;
+}
+
+.mesa-pociones {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.pociones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pociones-botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-pocion {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-pocion:hover {
+    transform: translateY(-5px);
+}
+
+.pocion {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pocion.roja {
+    background-color: #dc3545;
+}
+
+.pocion.correcta {
+    background-color: #0d6efd;
+}
+
+.pocion.negra {
+    background-color: #212529;
+}
+
+.pocion.verde {
+    background-color: #198754;
+}
+
+.mensaje-error {
+    color: red;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 5px;
+}
+</style>

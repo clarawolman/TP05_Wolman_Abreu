@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Sala 2 - Cáliz";
+}
+
+<div class="sala-caliz">
+    <h2>Sala 2 - El Cáliz de Fuego</h2>
+    <p>Arrastrá tu nombre al cáliz para participar en el torneo.</p>
+
+    <div class="drag-drop-container">
+        <div id="nombrePapel" draggable="true" ondragstart="drag(event)">
+            <img src="/img/nombrePapel.png" alt="Tu nombre" class="nombre-papel">
+        </div>
+        
+        <div id="dropArea" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="/img/caliz.png" alt="Cáliz de Fuego" class="caliz-img">
+        </div>
+        
+        <form method="post" asp-action="Sala2Pociones" id="formResultado" style="display:none;">
+            <button type="submit" class="btn btn-primary btn-magic">Continuar al desafío</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.currentTarget.id);
+    ev.dataTransfer.setDragImage(null, 0, 0);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    var draggedElement = document.getElementById(data);
+    
+    if (data === "nombrePapel") {
+        draggedElement.style.display = "none";
+        document.getElementById("formResultado").style.display = "block";
+        var caliz = document.querySelector('.caliz-img');
+        caliz.style.animation = 'brillar 2s infinite';
+    }
+}
+</script>

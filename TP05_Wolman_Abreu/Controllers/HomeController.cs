@@ -198,24 +198,34 @@ namespace EscapeRoom.Controllers
         }
 
         [HttpPost]
+public IActionResult Sala2Pociones()
+{
+    if (!ValidarAcceso(2)) return RedirectToAction("Index");
+    return View("Sala2Pociones");
+}
+
+        [HttpPost]
         public IActionResult TirarNombreAlCaliz()
         {
-            // El jugador “tiró” su nombre. Vamos a la escena de las pociones
+            // El jugador "tiró" su nombre. Vamos a la escena de las pociones
             return View("Sala2Pociones");
         }
 
         [HttpPost]
         public IActionResult ResolverPociones(string pocion)
         {
+            if (!ValidarAcceso(2)) return RedirectToAction("Index");
+
             if (pocion == "correcta")
             {
-                // Ganó. Vamos a la escena final
+                HttpContext.Session.SetInt32("SalaActual", 3);
                 return View("Sala2Final");
             }
-
-            // Falló. Mostrar mensaje y repetir la escena de pociones
-            ViewBag.Mensaje = "Esa poción no era la correcta. Intentalo de nuevo.";
-            return View("Sala2Pociones");
+            else
+            {
+                ViewBag.Mensaje = "¡Esa poción es peligrosa! Intenta con otra.";
+                return View("Sala2Pociones");
+            }
         }
 
         [HttpPost]

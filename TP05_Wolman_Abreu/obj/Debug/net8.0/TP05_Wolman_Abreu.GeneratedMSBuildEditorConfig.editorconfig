@@ -9,87 +9,91 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP05_Wolman_Abreu
 build_property.RootNamespace = TP05_Wolman_Abreu
-build_property.ProjectDir = C:\Users\49359\OneDrive\Desktop\2025\prog\TP05_Wolman_Abreu\TP05_Wolman_Abreu\
+build_property.ProjectDir = C:\Users\49359\TP05_Wolman_Abreu\TP05_Wolman_Abreu\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\49359\OneDrive\Desktop\2025\prog\TP05_Wolman_Abreu\TP05_Wolman_Abreu
+build_property.MSBuildProjectDirectory = C:\Users\49359\TP05_Wolman_Abreu\TP05_Wolman_Abreu
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Ganaste.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Ganaste.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHYW5hc3RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Index.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Ingreso.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Ingreso.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmdyZXNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/InstruccionesJuego.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/InstruccionesJuego.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnN0cnVjY2lvbmVzSnVlZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/juegoMemotest.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxqdWVnb01lbW90ZXN0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Gryffindor.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Gryffindor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMUdyeWZmaW5kb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Hufflepuff.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Hufflepuff.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMUh1ZmZsZXB1ZmYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Ravenclaw.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Ravenclaw.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMVJhdmVuY2xhdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Slytherin.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala1Slytherin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMVNseXRoZXJpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMi5jc2h0bWw=
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala2Caliz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMkNhbGl6LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala3.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala2Final.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMkZpbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala2Pociones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMlBvY2lvbmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhMy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala4.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala5.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala5.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhNS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala6.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala6.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhNi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/SalaMemotest.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/SalaMemotest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhTWVtb3Rlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Shared/_Layout.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/_ViewImports.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/2025/prog/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/_ViewStart.cshtml]
+[C:/Users/49359/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
