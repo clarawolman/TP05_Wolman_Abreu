@@ -2,42 +2,54 @@
     ViewData["Title"] = "Sala 2 - Final";
 }
 
-<div class="sala-final">
+<video autoplay loop muted playsinline id="bg-video" style="position: fixed; right: 0; bottom: 0; min-width: 100vw; min-height: 100vh; width: auto; height: auto; z-index: -1; object-fit: cover;">
+    <source src="/video/aceptacionCaliz.mp4" type="video/mp4">
+</video>
+
+<div class="sala2-final">
     <h2>¡Felicidades!</h2>
     <p>Has superado el desafío del Cáliz de Fuego.</p>
-
-    <div class="caliz-victoria">
-        <img src="/img/caliz_brilla.png" alt="Cáliz brillante" class="caliz-brillante">
-    </div>
 
     <form method="post" asp-action="Sala3">
         <button type="submit" class="btn btn-primary btn-lg">Avanzar a la siguiente sala</button>
     </form>
 </div>
-
 <style>
-.sala-final {
+.sala2-final {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/img/calizAcepta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 40px 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .caliz-victoria {
     margin: 40px 0;
 }
-
-.caliz-brillante {
-    width: 200px;
-    animation: brillar 2s infinite;
-}
-
 @@keyframes brillar {
-    0% { filter: brightness(1); }
-    50% { filter: brightness(1.5); }
-    100% { filter: brightness(1); }
+    0% { filter: brightness(1);}
+    50% { filter: brightness(1.5);}
+    100% { filter: brightness(1);}
 }
 
 .btn-lg {
     padding: 15px 30px;
     font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-lg:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 </style>

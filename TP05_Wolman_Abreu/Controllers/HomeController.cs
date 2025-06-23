@@ -5,7 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 
 namespace EscapeRoom.Controllers
-{
+{ /**/
     public class HomeController : Controller
     {
         public IActionResult Index()

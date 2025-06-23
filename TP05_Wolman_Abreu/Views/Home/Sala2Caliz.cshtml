@@ -7,7 +7,7 @@
     <p>Arrastrá tu nombre al cáliz para participar en el torneo.</p>
 
     <div class="drag-drop-container">
-        <div id="nombrePapel" draggable="true" ondragstart="drag(event)">
+        <div id="nombrePapel" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)">
             <img src="/img/nombrePapel.png" alt="Tu nombre" class="nombre-papel">
         </div>
         
@@ -15,8 +15,8 @@
             <img src="/img/caliz.png" alt="Cáliz de Fuego" class="caliz-img">
         </div>
         
-        <form method="post" asp-action="Sala2Pociones" id="formResultado" style="display:none;">
-            <button type="submit" class="btn btn-primary btn-magic">Continuar al desafío</button>
+        <form method="post" asp-action="Sala2Pociones" id="formResultado">
+            <button type="submit" class="btn btn-primary btn-magic">acepta el desafío y se elegido</button>
         </form>
     </div>
 </div>
@@ -24,11 +24,20 @@
 <script>
 function allowDrop(ev) {
     ev.preventDefault();
+    ev.dataTransfer.dropEffect = 'move';
 }
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.currentTarget.id);
-    ev.dataTransfer.setDragImage(null, 0, 0);
+    setTimeout(() => {
+        ev.target.style.display = 'none';
+    }, 0);
+}
+
+function dragEnd(ev) {
+    if (ev.dataTransfer.dropEffect === 'none') {
+      ev.target.style.display = 'block';
+    }
 }
 
 function drop(ev) {
@@ -38,9 +47,8 @@ function drop(ev) {
     
     if (data === "nombrePapel") {
         draggedElement.style.display = "none";
-        document.getElementById("formResultado").style.display = "block";
-        var caliz = document.querySelector('.caliz-img');
-        caliz.style.animation = 'brillar 2s infinite';
+        document.getElementById("formResultado").classList.add("show");
+        document.getElementById("dropArea").classList.add("highlight");
     }
 }
 </script>

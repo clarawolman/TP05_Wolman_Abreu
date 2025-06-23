@@ -2,7 +2,7 @@
     ViewData["Title"] = "Inicio";
 }
 
-<div class="Inicio">
+<section class="Inicio">
     <h1>Torneo de los Tres Magos</h1>
     <p>Biendivenido al desafío mágico. ¿Estás listo?</p>
     <a href='@Url.Action("InstruccionesJuego")'>¿Cómo jugar?</a>
@@ -13,8 +13,7 @@
             <img src="img/clickCarta.jpg" alt="Click para abrir la carta" class="sello-imagen"/>
         </a>
     </div>
-</div>
-<!--- https://youtu.be/xBAeOTHtZVg?si=sQZGIwFbEyG1RqEN
-https://youtu.be/pbXHrJWsqcQ?si=daviACx05szBAjpY
-https://youtu.be/oXZN62dWPpY?si=xvZa3qmMARiSuHPs
-https://ytbdownload.com/es/home/ ---!--->
+</section>
+<video autoplay loop muted playsinline id="bg-video" style="position: fixed; right: 0; bottom: 0; min-width: 100vw; min-height: 100vh; width: auto; height: auto; z-index: -1; object-fit: cover;">
+    <source src="/video/cartaInicio.mp4" type="video/mp4">
+</video>

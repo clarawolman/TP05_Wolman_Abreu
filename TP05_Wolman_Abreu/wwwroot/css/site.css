@@ -1,15 +1,19 @@
 /*cosas que no estan saliendo: 
   - cursor de varita
-  - falta bastante homecontroller
-  - video a checkear
+  - AUDIOSSS en todos 
 */
 
-/* Generales */
+/* generales */
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  cursor: url('/img/varita.png'), auto;
+  min-height: 100%;
+  cursor: url('/img/varita.png'), auto; /*no funciona esto me voy a matar*/ 
+  display: flex;
+  flex-direction: column;
 }
 
 body *:hover {
@@ -18,27 +22,24 @@ body *:hover {
 
 area {
   cursor: pointer;
-  border: 2px solid white;
 }
 area:hover {
   cursor: pointer;
 }
 
-/* Estilos para Index (página principal) */
+/* Estilos para Index (página principal) FALTA FONDO*/
 .Inicio {
 width: 100%;
-background-image: url('/img/hogwarts.jpg');
-background-size: cover;
 }
 
-/* Estilos para InstruccionesJuego */
+/* Estilos para InstruccionesJuego FALTA FONDO*/
 .Instrucciones{
 width: 100%;
 background-image: url('/img/hogwarts.jpg');
 background-size:cover;
 }
 
-/* Estilos para Ingreso (se ingresa nombre y casa)*/
+/* Estilos para Ingreso (se ingresa nombre y casa) BIEN*/
 .Ingreso {
 width: 100%;
 height: 100vh;
@@ -48,7 +49,7 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
-/* Estilos para Ingreso (contenedor principal) */
+/* Estilos para Ingreso (contenedor principal) BIEN */
 .ingreso-container {
 width: 100%;
 min-height: 100vh;
@@ -64,7 +65,7 @@ position: relative;
 overflow-y: auto;
 }
 
-/* Estilos del formulario en Ingreso.cshtml */
+/* Estilos del formulario en Ingreso.cshtml BIEN*/
 .form-container {
 padding: 2rem;
 border-radius: 10px;
@@ -94,7 +95,8 @@ margin-top: 1rem;
 background-color: #dcb8a1(0, 0, 0, 0.7);
 border: 2px solid #dcb8a1;
 }
-/* Estilos para la carta en Ingreso.cshtml */
+
+/* Estilos para la carta en Ingreso.cshtml BIEN*/
 .carta-container {
   position: relative;
   display: inline-block;
@@ -124,37 +126,51 @@ border: 2px solid #dcb8a1;
 
 /* Estilos compartidos para los párrafos en las salas de las casas */
 .sala-gryffindor p, .sala-ravenclaw p, .sala-hufflepuff p, .sala-slytherin p {
-margin-bottom: 60%;
+margin-bottom: 20px;
 }
 
 /* Estilos para Gryffindor */
 .sala-gryffindor {
-background-color: #740001;
-background-image: url('/img/gryffindoresc.png');
-background-size: cover;
-color: #D3A625;
-padding: 20px;
+    background-image: url('../img/gryffindoresc.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 20px;
+    background-repeat: no-repeat;
 }
-.gryffindor-link{
-position: absolute;
-top: 113.5%;
-left: 52.5%;
-transform: translate(-50%, -50%);
+.invisible-button {
+    background-color: transparent;
+    border: none;
+    width: 400px; /* Ajusta el ancho según sea necesario */
+    height: 140px; /* Ajusta el alto según sea necesario */
+    position: absolute; /* O 'relative' si es necesario para el posicionamiento */
+    top: 90%; /* Ajusta la posición vertical */
+    left: 49%; /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el botón */
+    z-index: 10;
+    display: block; /* Asegura que el enlace ocupe el espacio */
 }
 .gryffindor-imagen{
-  max-width: 85%;
-  height: auto;
-  border: none;
-  outline: none;
+    width: 250px;
+    height: auto;
+    border: none;
+    outline: none;
 }
 
 /* Estilos para Slytherin */
 .sala-slytherin {
 background-color: #1A472A;
 color: #AAAAAA;
-background-image: url('/img/slytherinesc.png');
+background-image: url('/img/slytherinesc.jpg');
 background-size: cover;
 padding: 20px;
+min-height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
 }
 .slytherin-link {
 position: absolute;
@@ -173,9 +189,12 @@ outline: none;
 .sala-ravenclaw {
 background-color: #0E1A40;
 color: #946B2D;
-background-image: url('/img/ravenclawesc.png');
+background-image: url('/img/ravenclawesc.jpg');
 background-size: cover;
 padding: 20px;
+min-height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
 }
 .ravenclaw-link {
 position: absolute;
@@ -194,9 +213,12 @@ outline: none;
 .sala-hufflepuff {
 background-color: #ECB939;
 color: #372E29;
-background-image: url('/img/hufflepuffesc.png');
+background-image: url('/img/hufflepuffesc.jpg');
 background-size: cover;
 padding: 20px;
+min-height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
 }
 .hufflepuff-link {
 position: absolute;
@@ -233,34 +255,72 @@ margin-top: 15px;
 .btn-resolver:hover {
 opacity: 0.9;
 }
-/* Agrega esto en tu archivo CSS o en un style tag */
-.pociones-container button {
+
+/* Estilos para las pociones */
+/* CAMBIO: Cambié de input[type="image"] a .btn-pocion para botones con imágenes */
+/* CÓDIGO ANTERIOR (NO FUNCIONABA):
+.pociones-container input[type="image"] {
   transition: all 0.3s ease;
+  width: 120px;
+  height: auto;
+}
+*/
+
+.pocion {
+  width: 150px;
+  height: auto;
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
 }
 
-.pociones-container button:hover {
+.pociones-container {
+  background-image: url('/img/mesaPociones.jpg');
+  background-size: cover;
+  padding: 20px;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px;
+}
+
+/* CÓDIGO NUEVO: Estilos para botones con imágenes */
+.btn-pocion {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-pocion img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.btn-pocion:hover {
   transform: translateY(-5px);
 }
 
-.pociones-container button:active {
+.btn-pocion:active {
   transform: translateY(0);
 }
 
-#dragArea {
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-}
-
-#nombrePapel:hover {
-  animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+/* Estilos para mensajes de error en pociones */
+.mensaje-error {
+  color: red;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* Estilos para Sala2Caliz */
@@ -296,19 +356,12 @@ opacity: 0.9;
 
 #nombrePapel {
     position: absolute;
-    left: 5%;
-    top: 5%;
-    width: 100px;
+    top: 73%;
+    left: 13%;
+    transform: translateX(-50%);
+    width: 150px;
     height: auto;
     cursor: grab;
-    z-index: 2;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 10;
     transition: transform 0.3s ease;
 }
@@ -317,76 +370,108 @@ opacity: 0.9;
     width: 100%;
     height: auto;
     display: block;
-    width: 150px;
     cursor: grab;
 }
 
-#nombrePapel:active {
-    cursor: grabbing;
-}
 
 .caliz-img {
-    width: 400px;
+    width: 80%;
     height: auto;
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%;
-    max-width: 250px;
-    transition: transform 0.3s ease;
 }
 
 #dropArea {
-    width: 450px;
-    height: 450px;
     position: absolute;
-    left: 50%;
-    top: 80%;
+    top: 73%;
+    left: 45%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    border: 3px dashed rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    background-color: rgba(0, 255, 0, 0.1);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
     width: 300px;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 3px dashed transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 5;
+    transition: all 0.3s ease;
 }
 
-#dropArea.dragover {
-    background-color: rgba(0, 255, 0, 0.3);
-    border-color: rgb(0, 255, 0);
-}
-
+/* Efecto de destello solo cuando se suelta el nombre */
 #dropArea.highlight {
-  border: 2px dashed gold;
-  border-radius: 50%;
+    animation: brilloCáliz 1s ease-in-out;
 }
 
-#dropArea.highlight .caliz-img {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 10px gold);
+/* Animación de brillo alrededor del cáliz */
+@keyframes brilloCáliz {
+    0% {
+        filter: drop-shadow(0 0 0px rgba(255, 215, 0, 0));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+    }
+    100% {
+        filter: drop-shadow(0 0 0px rgba(255, 215, 0, 0));
+    }
 }
 
 #formResultado {
     position: absolute;
-    bottom: 50px;
-    left: 50%;
+    top: 100%;
+    left: 82%;
     transform: translateX(-50%);
     z-index: 3;
-    bottom: 10%;
+    bottom: 1%;
     z-index: 10;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+/* Estilos para el botón mágico de continuar */
+#formResultado .btn-magic {
+  background-color: transparent; /* Color dorado, como el botón de resolver */
+  color: #6aa2ba;           /* Un color de texto oscuro que combine */
+  padding: 12px 25px;        /* Espaciado interno para hacerlo más grande */
+  font-size: 1.1rem;    
+  font-family: 'Harry Potter';
+  font-weight: bold;         /* Letra en negrita */
+  cursor: url('/img/varitaLumos.png'), auto; /* Cursor de varita al pasar por encima */
+  transition: all 0.3s ease; /* Transición suave para las animaciones */
+}
+
+/* Estilos para cuando pasas el cursor por encima del botón */
+#formResultado .btn-magic:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Una sombra más pronunciada */
+  transform: translateY(-2px); /* Eleva un poco el botón */
+}
 
 #formResultado.show {
   opacity: 1;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#dragArea {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.sala2-final {
+  width: 100%;
+  min-height: 100vh;
+    background-image: url('/img/calizAcepta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
