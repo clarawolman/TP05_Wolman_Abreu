@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7oXNQuJ4G8aSJsKtFkotIMdtjB1dDEOruxxhDaALeeU=",
+  "Hash": "1GW5dZL1RWq9MSEdeWUUHAqUb7xGHPg15gxFnsP43Jc=",
   "Source": "TP05_Wolman_Abreu",
   "BasePath": "_content/TP05_Wolman_Abreu",
   "Mode": "Default",
@@ -1041,6 +1041,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\video\\cartaInicio.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\dementor.mp4",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "video/dementor.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\video\\dementor.mp4"
     }
   ]
 }

@@ -217,6 +217,10 @@
       "PackagePath": "staticwebassets\\video\\cartaInicio.mp4"
     },
     {
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\dementor.mp4",
+      "PackagePath": "staticwebassets\\video\\dementor.mp4"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TP05_Wolman_Abreu.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

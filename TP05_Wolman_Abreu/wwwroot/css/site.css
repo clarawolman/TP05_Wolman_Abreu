@@ -124,20 +124,6 @@ border: 2px solid #dcb8a1;
   display: block;
 }
 
-.carta-container .sello-link {
-  position: absolute;
-  top: 60.5%;
-  left: 51.5%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-.carta-container .sello-imagen {
-  max-width: 113px;
-  height: auto;
-  border: none;
-  outline: none;
-}
 
 /* Estilos compartidos para los párrafos en las salas de las casas */
 .sala-gryffindor p, .sala-ravenclaw p, .sala-hufflepuff p, .sala-slytherin p {
@@ -158,17 +144,35 @@ margin-bottom: 20px;
     background-repeat: no-repeat;
     font-size: 1.35rem;
 }
-.invisible-button {
+.carta-inicio-link {
     background-color: transparent;
     border: none;
-    width: 400px; /* Ajusta el ancho según sea necesario */
-    height: 140px; /* Ajusta el alto según sea necesario */
-    position: absolute; /* O 'relative' si es necesario para el posicionamiento */
-    top: 90%; /* Ajusta la posición vertical */
-    left: 49%; /* Ajusta la posición horizontal */
-    transform: translate(-50%, -50%); /* Centra el botón */
+    /* Edita el ancho y alto del área clickeable de la carta de inicio aquí: */
+    width: 200px;   /* Cambia este valor para el ancho */
+    height: 80px;   /* Cambia este valor para la altura */
+    position: absolute;
+    /* Edita la posición del botón aquí: */
+    top: 55%;      /* Cambia este valor para moverlo verticalmente */
+    left: 51.5%;   /* Cambia este valor para moverlo horizontalmente */
+    transform: translate(-50%, -50%);
     z-index: 10;
-    display: block; /* Asegura que el enlace ocupe el espacio */
+    display: block;
+    cursor: pointer;
+}
+.gryffindor-link {
+    background-color: transparent;
+    border: none;
+    /* Edita el ancho y alto del área clickeable de Gryffindor aquí: */
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    /* Edita la posición del botón aquí: */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: block;
+    cursor: pointer;
 }
 .gryffindor-imagen{
     width: 250px;
@@ -198,10 +202,17 @@ background-position: center;
 font-size: 1.35rem;
 }
 .slytherin-link {
-position: absolute;
-top: 110.9%;
-left: 51.5%;
-transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: block;
+    cursor: pointer;
 }
 .slytherin-imagen {
 max-width: 86.3%;
@@ -231,10 +242,17 @@ background-position: center;
 font-size: 1.35rem;
 }
 .ravenclaw-link {
-position: absolute;
-top: 112.6%;
-left: 53.5%;
-transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: block;
+    cursor: pointer;
 }
 .ravenclaw-imagen {
 max-width: 82.5%;
@@ -264,10 +282,17 @@ background-position: center;
 font-size: 1.35rem;
 }
 .hufflepuff-link {
-position: absolute;
-top: 112.8%;
-left: 52.5%;
-transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: block;
+    cursor: pointer;
 }
 .hufflepuff-imagen {
 max-width: 87%;
