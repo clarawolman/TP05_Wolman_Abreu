@@ -116,6 +116,12 @@ border: 2px solid #dcb8a1;
   display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 22px !important;
+  box-shadow: 0 4px 24px 0 #0008;
+  width: 600px !important;
+  max-width: 98vw !important;
+  margin: 0 auto;
+  display: block;
 }
 
 .carta-container .sello-link {
@@ -150,6 +156,7 @@ margin-bottom: 20px;
     position: relative;
     padding: 20px;
     background-repeat: no-repeat;
+    font-size: 1.35rem;
 }
 .invisible-button {
     background-color: transparent;
@@ -169,6 +176,14 @@ margin-bottom: 20px;
     border: none;
     outline: none;
 }
+.sala-gryffindor h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  font-family: 'HarryP', serif;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
 
 /* Estilos para Slytherin */
 .sala-slytherin {
@@ -180,6 +195,7 @@ padding: 20px;
 min-height: 100vh;
 background-repeat: no-repeat;
 background-position: center;
+font-size: 1.35rem;
 }
 .slytherin-link {
 position: absolute;
@@ -193,6 +209,14 @@ height: auto;
 border: none;
 outline: none;
 }
+.sala-slytherin h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  font-family: 'HarryP', serif;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
 
 /* Estilos para Ravenclaw */
 .sala-ravenclaw {
@@ -204,6 +228,7 @@ padding: 20px;
 min-height: 100vh;
 background-repeat: no-repeat;
 background-position: center;
+font-size: 1.35rem;
 }
 .ravenclaw-link {
 position: absolute;
@@ -217,6 +242,14 @@ height: auto;
 border: none;
 outline: none;
 }
+.sala-ravenclaw h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  font-family: 'HarryP', serif;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
 
 /* Estilos para Hufflepuff */
 .sala-hufflepuff {
@@ -228,6 +261,7 @@ padding: 20px;
 min-height: 100vh;
 background-repeat: no-repeat;
 background-position: center;
+font-size: 1.35rem;
 }
 .hufflepuff-link {
 position: absolute;
@@ -240,6 +274,14 @@ max-width: 87%;
 height: auto;
 border: none;
 outline: none;
+}
+.sala-hufflepuff h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  font-family: 'HarryP', serif;
+  margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 /* Estilos para contenedores de puzzles - usado en Sala2.cshtml, Sala3.cshtml, Sala4.cshtml */
@@ -342,6 +384,7 @@ opacity: 0.9;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+    font-size: 1.35rem;
 }
 
 .sala-caliz h2, .sala-caliz p {
@@ -477,12 +520,9 @@ footer {
 .sala2-final {
   width: 100%;
   min-height: 100vh;
-    background-image: url('/img/calizAcepta.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
+    background-image: none !important;
+    background: transparent !important;
+  font-size: 1.35rem;
 }
 
 /* Overlay oscuro para el fondo */
@@ -551,4 +591,95 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+/* --- Palabras grandes y blancas --- */
+.titulo-grande {
+  font-size: 3.2rem;
+  color: #fff;
+  font-family: 'HarryP', serif;
+  text-shadow: 2px 2px 8px #000;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.texto-grande {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 6px #000;
+  text-align: center;
+}
+.titulo-grande.scale-hover:hover, .texto-grande.scale-hover:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s;
+}
+
+/* --- Borde redondeado para carta cerrada --- */
+.carta-base {
+  border-radius: 22px !important;
+  box-shadow: 0 4px 24px 0 #0008;
+  width: 600px !important;
+  max-width: 98vw !important;
+  margin: 0 auto;
+  display: block;
+}
+
+/* --- Botón '¿Cómo jugar?' centrado, sin fondo y con mejor padding --- */
+.btn-como-jugar {
+  display: block;
+  margin: 1.2rem auto 1.5rem auto;
+  background: none !important;
+  color: #fff;
+  font-family: 'HarryP', serif;
+  font-size: 1.3rem;
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 1rem 3.2rem;
+  box-shadow: none;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.18s;
+  cursor: pointer;
+}
+.btn-como-jugar:hover {
+  color: #FFD700;
+  border-color: #fff;
+  background: none;
+  transform: scale(1.06);
+  box-shadow: none;
+}
+
+/* --- Footer siempre pegado abajo en salas con video --- */
+.sala2-final, .Inicio {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sala2-final main, .Inicio main {
+  flex: 1 0 auto;
+}
+.sala2-final footer, .Inicio footer {
+  flex-shrink: 0;
+  margin-top: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* --- Agrandar letra en todas las salas --- */
+.sala-gryffindor, .sala-slytherin, .sala-ravenclaw, .sala-hufflepuff, .sala-caliz, .sala2-final, .sala-pociones, .memotest-grid, .sala4, .sala5, .sala6 {
+  font-size: 1.35rem !important;
+}
+.sala-gryffindor p, .sala-slytherin p, .sala-ravenclaw p, .sala-hufflepuff p, .sala-caliz p, .sala2-final p, .sala-pociones p, .memotest-grid p, .sala4 p, .sala5 p, .sala6 p {
+  font-size: 1.35rem !important;
+}
+.sala-gryffindor h2, .sala-slytherin h2, .sala-ravenclaw h2, .sala-hufflepuff h2, .sala-caliz h2, .sala2-final h2, .sala-pociones h2, .memotest-grid h2, .sala4 h2, .sala5 h2, .sala6 h2 {
+  font-size: 2.5rem !important;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  font-family: 'HarryP', serif;
+  margin-bottom: 1.2rem;
+  text-align: center;
 }

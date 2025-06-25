@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\HARRYP__.TTF",
+      "PackagePath": "staticwebassets\\fonts\\HARRYP__.TTF"
+    },
+    {
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\harryp-readme.txt",
+      "PackagePath": "staticwebassets\\fonts\\harryp-readme.txt"
+    },
+    {
       "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_basilisco.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\imagen_basilisco.jpg"
     },

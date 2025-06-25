@@ -2,14 +2,13 @@
     ViewData["Title"] = "Sala 2 - Final";
 }
 
-<video autoplay loop muted playsinline id="bg-video" style="position: fixed; right: 0; bottom: 0; min-width: 100vw; min-height: 100vh; width: auto; height: auto; z-index: -1; object-fit: cover;">
+<video autoplay loop muted playsinline id="bg-video" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; min-width: 100vw; min-height: 100vh; width: 100vw; height: 100vh; z-index: -1; object-fit: cover;">
     <source src="/video/aceptacionCaliz.mp4" type="video/mp4">
 </video>
 
 <div class="sala2-final">
-    <h2>¡Felicidades!</h2>
-    <p>Has superado el desafío del Cáliz de Fuego.</p>
-
+    <h2 class="titulo-grande scale-hover">¡Felicidades!</h2>
+    <p class="texto-grande scale-hover">Has superado el desafío del Cáliz de Fuego.</p>
     <form method="post" asp-action="Sala3">
         <button type="submit" class="btn btn-primary btn-lg">Avanzar a la siguiente sala</button>
     </form>
@@ -18,10 +17,8 @@
 .sala2-final {
     width: 100%;
     min-height: 100vh;
-    background-image: url('/img/calizAcepta.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: none !important;
+    background: transparent !important;
     text-align: center;
     padding: 40px 20px;
     color: white;

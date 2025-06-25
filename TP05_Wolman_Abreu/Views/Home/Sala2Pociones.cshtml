@@ -2,23 +2,20 @@
     ViewData["Title"] = "Sala 2 - Pociones";
 }
 
-<!-- 
-CAMBIOS REALIZADOS EN ESTE ARCHIVO:
-
-1. PROBLEMA ORIGINAL: Los inputs type="image" no enviaban correctamente los valores al controlador
-2. SOLUCIÓN: Cambié a button type="submit" con imágenes dentro
-3. PROBLEMA ADICIONAL: La página se iba arriba cuando se hacía clic en pociones incorrectas
-4. SOLUCIÓN: Agregué JavaScript para mantener la posición de la página
-
-CÓDIGO ANTERIOR (NO FUNCIONABA):
-<input type="image" name="pocion" value="correcta" src="/img/pocion_roja.png" alt="Poción roja" class="btn-pocion">
-
-CÓDIGO NUEVO (FUNCIONA):
-<button type="submit" name="pocion" value="correcta" class="btn-pocion">
-    <img src="/img/pocion_roja.png" alt="Poción roja">
-</button>
--->
-
+@if (ViewBag.Mensaje != null)
+{
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh;">
+        <video autoplay loop muted playsinline style="max-width: 480px; width: 100%; border-radius: 18px; box-shadow: 0 0 30px #000; margin-bottom: 24px;">
+            <source src="/video/dementor.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <form method="post" asp-action="Sala2Pociones">
+            <button type="submit" class="btn btn-primary" style="font-size:1.2rem; padding: 0.7rem 2.5rem; border-radius: 12px;">Intentar de nuevo</button>
+        </form>
+    </div>
+}
+else
+{
 <section class="sala-pociones">
     <h2>El Desafío de las Pociones</h2>
     <p>Una de estas pociones te permitirá avanzar. Las otras son peligrosas.</p>
@@ -52,13 +49,6 @@ CÓDIGO NUEVO (FUNCIONA):
             </div>
         </form>
     </section>
-
-    @if (ViewBag.Mensaje != null)
-    {
-        <div class="mensaje-error">
-            <p>@ViewBag.Mensaje</p>
-        </div>
-    }
 </section>
 
 <!-- JavaScript para mantener la posición de la página después del submit -->
@@ -78,3 +68,5 @@ window.addEventListener('load', function() {
     }
 });
 </script>
+}
+nooo, no quiero que sea asi, quiero simplemente que aparezca el dementor encima de lo de pociones sin lo de play y que aparezca y se vaya automaticamente
