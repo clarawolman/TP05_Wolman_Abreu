@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\audio\\tomarSound.mp3"
     },
     {
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\sala3.css",
+      "PackagePath": "staticwebassets\\css\\sala3.css"
+    },
+    {
       "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -155,6 +159,10 @@
     {
       "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varitaLumos.png",
       "PackagePath": "staticwebassets\\img\\varitaLumos.png"
+    },
+    {
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala3.js",
+      "PackagePath": "staticwebassets\\js\\sala3.js"
     },
     {
       "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",

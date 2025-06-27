@@ -1,35 +1,61 @@
 @{
-    ViewData["Title"] = "Sala 4 - Lago";
+    ViewData["Title"] = "Sala 4 - Mar";
 }
-<h2>Sala 4 - Bajo el lago</h2>
-<p>Arrastrá el hechizo correcto al lugar correcto.</p>
-
-<div>
-    <div id="lumos" draggable="true" ondragstart="drag(event)">Lumos</div>
-    <div id="reparo" draggable="true" ondragstart="drag(event)">Reparo</div>
-    <div id="alohomora" draggable="true" ondragstart="drag(event)">Alohomora</div>
+<link rel="stylesheet" href="/css/sala4.css" />
+<h2>Sala 4 - Mar</h2>
+<div id="pistas-container">
+    <div class="pista">
+        <b>Cueva oscura</b> (arriba izquierda)<br/>
+        <span class="emoji">🔮</span> <b>Hechizo:</b> Lumos<br/>
+        <span class="emoji">💡</span> <b>Pista:</b> La entrada es completamente negra, no se ve qué hay adentro. La oscuridad sugiere que necesitás luz para avanzar sin peligro.
+    </div>
+    <div class="pista">
+        <b>Puerta mágica brillante</b> (arriba derecha)<br/>
+        <span class="emoji">🔮</span> <b>Hechizo:</b> Alohomora<br/>
+        <span class="emoji">💡</span> <b>Pista:</b> Tiene un arco claramente definido como puerta, con brillos mágicos. Es una barrera que parece cerrada, posiblemente con magia.
+    </div>
+    <div class="pista">
+        <b>Naufragio</b> (centro)<br/>
+        <span class="emoji">🔮</span> <b>Hechizo:</b> Reparo<br/>
+        <span class="emoji">💡</span> <b>Pista:</b> El barco está roto o hundido. Se ve dañado, lo cual indica que un hechizo reparador sería útil para restaurarlo y usarlo.
+    </div>
+    <div class="pista">
+        <b>Roca con símbolos</b> (abajo izquierda)<br/>
+        <span class="emoji">🔮</span> <b>Hechizo:</b> Lumos<br/>
+        <span class="emoji">💡</span> <b>Pista:</b> Los símbolos antiguos o mágicos podrían necesitar ser iluminados para ser leídos o activados, como con tinta invisible o runas mágicas.
+    </div>
+    <div class="pista">
+        <b>Algas luminosas</b> (abajo derecha)<br/>
+        <span class="emoji">🔮</span> <b>Hechizo:</b> Lumos<br/>
+        <span class="emoji">💡</span> <b>Pista:</b> Aunque ya brillan, podrían estar ocultando un pasaje o un objeto. La idea es que el hechizo te ayude a revelar o encontrar algo oculto en el fondo.
+    </div>
 </div>
-
-<div>
-    <p>Cueva: <span ondrop="drop(event)" ondragover="allowDrop(event)" id="cueva"></span></p>
-    <p>Puerta mágica: <span ondrop="drop(event)" ondragover="allowDrop(event)" id="puerta"></span></p>
+<div id="mapa-container">
+    <img id="img-mapa" src="/images/mapa_merodeador_lago.jpg" alt="Mapa del lago" />
+    <div class="zona" id="cueva" data-correcto="reparo" style="left:10%;top:60%;">Cueva</div>
+    <div class="zona" id="naufragio" data-correcto="finite" style="left:60%;top:70%;">Naufragio</div>
+    <div class="zona" id="roca" data-correcto="alohomora" style="left:40%;top:30%;">Roca con símbolos</div>
+    <div class="zona" id="algas" data-correcto="lumos" style="left:70%;top:40%;">Algas luminosas</div>
+    <div class="zona" id="puerta" data-correcto="wingardium" style="left:20%;top:10%;">Puerta mágica</div>
 </div>
-
-<form method="post">
-    <input type="hidden" name="respuesta" value="correcta" />
-    <button type="submit">Confirmar combinación</button>
-</form>
-
-<script>
-function allowDrop(ev) {
-    ev.preventDefault();
+<div id="hechizos-container">
+    <div class="hechizo" draggable="true" data-hechizo="lumos"><img src="/images/hechizo_lumos.png" alt="Lumos" /></div>
+    <div class="hechizo" draggable="true" data-hechizo="reparo"><img src="/images/hechizo_reparo.png" alt="Reparo" /></div>
+    <div class="hechizo" draggable="true" data-hechizo="alohomora"><img src="/images/hechizo_alohomora.png" alt="Alohomora" /></div>
+    <div class="hechizo" draggable="true" data-hechizo="wingardium"><img src="/images/hechizo_wingardium.png" alt="Wingardium Leviosa" /></div>
+    <div class="hechizo" draggable="true" data-hechizo="finite"><img src="/images/hechizo_finite.png" alt="Finite" /></div>
+</div>
+<div id="feedback"></div>
+<div id="secuencia-container" style="display:none;">
+    <h3>Secuencia del duende acuático</h3>
+    <div id="secuencia-hechizos"></div>
+    <div id="opciones-secuencia"></div>
+    <div id="feedback-secuencia"></div>
+</div>
+<audio id="audio-error" src="/audio/magia_fallida.mp3"></audio>
+<audio id="audio-exito" src="/audio/magia_exito.mp3"></audio>
+<script src="/js/sala4.js"></script>
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger">@ViewBag.Mensaje</div>
 }
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.textContent = data;
-}
-</script>

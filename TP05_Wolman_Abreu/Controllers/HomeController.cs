@@ -239,7 +239,6 @@ public IActionResult Sala2Pociones()
             return RedirectToAction("Sala2");
         }
 
-
         public IActionResult Sala3()
         {
             if (!ValidarAcceso(3)) return RedirectToAction("Index");
@@ -247,35 +246,9 @@ public IActionResult Sala2Pociones()
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Sala3(string respuesta)
-        {
-            if (respuesta == "correcta")
-            {
-                HttpContext.Session.SetInt32("SalaActual", 4);
-                return RedirectToAction("Sala4");
-            }
-            ViewBag.Mensaje = "Respuesta incorrecta. Baldosa ruidosa.";
-            CargarDatosSala(3);
-            return View();
-        }
-
         public IActionResult Sala4()
         {
-            if (!ValidarAcceso(4)) return RedirectToAction("Index");
-            CargarDatosSala(4);
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Sala4(string respuesta)
-        {
-            if (respuesta == "correcta")
-            {
-                HttpContext.Session.SetInt32("SalaActual", 5);
-                return RedirectToAction("Sala5");
-            }
-            ViewBag.Mensaje = "Combinación incorrecta.";
+            // if (!ValidarAcceso(4)) return RedirectToAction("Index"); // Desactivado para pruebas
             CargarDatosSala(4);
             return View();
         }

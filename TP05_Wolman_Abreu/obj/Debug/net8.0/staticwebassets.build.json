@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1GW5dZL1RWq9MSEdeWUUHAqUb7xGHPg15gxFnsP43Jc=",
+  "Hash": "JprDa7ac04EJHCDqnl6vuqH0ZqWP5+CJk/3vX3Qj7gw=",
   "Source": "TP05_Wolman_Abreu",
   "BasePath": "_content/TP05_Wolman_Abreu",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\audio\\tomarSound.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\sala3.css",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "css/sala3.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\sala3.css"
     },
     {
       "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
@@ -756,6 +775,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\varitaLumos.png"
+    },
+    {
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala3.js",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "js/sala3.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sala3.js"
     },
     {
       "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",

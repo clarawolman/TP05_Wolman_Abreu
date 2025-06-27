@@ -1,0 +1,108 @@
+#mapa-container {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto 30px auto;
+}
+#img-mapa {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.zona {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    background: rgba(0,0,0,0.2);
+    border: 2px dashed #333;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.zona.correcta {
+    background: rgba(0,255,0,0.3);
+    border-color: #0f0;
+}
+.zona.incorrecta {
+    background: rgba(255,0,0,0.3);
+    border-color: #f00;
+}
+#hechizos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.hechizo {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    transition: border 0.3s;
+}
+.hechizo.dragging {
+    opacity: 0.5;
+    border: 2px dashed #fff;
+}
+#secuencia-container {
+    margin-top: 30px;
+    text-align: center;
+}
+#secuencia-hechizos img {
+    width: 60px;
+    margin: 0 10px;
+}
+#opciones-secuencia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+#opciones-secuencia img {
+    width: 60px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border 0.2s;
+}
+#opciones-secuencia img.selected {
+    border: 2px solid #0f0;
+}
+#pistas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin: 25px auto 18px auto;
+    max-width: 1100px;
+}
+.pista {
+    background: rgba(30, 40, 80, 0.13);
+    border-left: 5px solid #4e7cff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 14px 18px 12px 18px;
+    min-width: 220px;
+    max-width: 320px;
+    font-size: 1.05em;
+    color: #1a1a2a;
+    margin-bottom: 0;
+    transition: box-shadow 0.2s;
+}
+.pista:hover {
+    box-shadow: 0 4px 16px rgba(78,124,255,0.13);
+    background: rgba(78,124,255,0.08);
+}
+.emoji {
+    font-size: 1.2em;
+    vertical-align: middle;
+} 
