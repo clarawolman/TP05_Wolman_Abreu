@@ -38,7 +38,7 @@
             {
                 <div class="text-center mt-4">
                     <h3 class="text-success mb-3">¡Felicitaciones! Has encontrado todos los pares</h3>
-                    <a asp-action="Sala2" class="btn btn-primary btn-lg">
+                    <a asp-action="Sala2" class="btn btn-primary btn-lg" id="btn-continuar-memotest">
                         Continuar a la siguiente sala
                     </a>
                 </div>
@@ -46,6 +46,9 @@
         </div>
     </div>
 </div>
+
+<audio id="audio-carta" src="/audio/abrirCartaSound.mp3"></audio>
+<audio id="audio-victory" src="/audio/victory.mp3"></audio>
 
 <style>
     .memotest-grid {
@@ -78,4 +81,48 @@
     .btn.disabled .carta-memotest {
         transform: none;
     }
-</style> 
+
+    html, body {
+        height: 100% !important;
+        min-height: 100vh !important;
+    }
+
+    .fondo-memotest {
+        background-image: url('/img/fondoGeneral.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100vw;
+    }
+</style>
+
+<div class="fondo-memotest">
+<script>
+document.querySelectorAll('.memotest-grid form').forEach(form => {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const audio = document.getElementById('audio-carta');
+    if(audio) { audio.currentTime = 0; audio.play(); }
+    // Enviar el formulario por AJAX para evitar el reload y el scroll
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'X-Requested-With': 'XMLHttpRequest' }
+    }).then(() => {
+      window.location.reload(); // Recargar para actualizar el tablero, pero sin scroll automático
+    });
+  });
+});
+// Sonido de victoria al ganar
+const btnContinuar = document.getElementById('btn-continuar-memotest');
+if (btnContinuar) {
+  document.getElementById('audio-victory').play();
+  btnContinuar.addEventListener('click', function() {
+    const audio = document.getElementById('audio-victory');
+    if (audio) { audio.currentTime = 0; audio.play(); }
+  });
+}
+</script> 
+</div> 

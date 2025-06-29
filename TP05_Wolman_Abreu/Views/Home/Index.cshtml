@@ -8,10 +8,18 @@
     <a href='@Url.Action("InstruccionesJuego")' class="btn-como-jugar">¿Cómo jugar?</a>
     <p class="texto-grande">Abrí la carta para comenzar</p>
     <div class="carta-container">
-        <img src="img/cartacerrada.jpg" alt="Carta cerrada" class="carta-base"/>
-        <a href='@Url.Action("Ingreso")' class="carta-inicio-link"></a>
+        <a id="carta-link" href="/Home/Ingreso">
+            <img src="/img/cartacerrada.jpg" alt="Carta de Hogwarts" class="carta-base"/>
+        </a>
     </div>
 </section>
 <video autoplay loop muted playsinline id="bg-video" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; min-width: 100vw; min-height: 100vh; width: 100vw; height: 100vh; z-index: -1; object-fit: cover;">
     <source src="/video/cartaInicio.mp4" type="video/mp4">
 </video>
+<audio id="audio-carta" src="/audio/abrirCartaSound.mp3"></audio>
+<script>
+document.getElementById('carta-link')?.addEventListener('click', function() {
+  const audio = document.getElementById('audio-carta');
+  if(audio) { audio.currentTime = 0; audio.play(); }
+});
+</script>

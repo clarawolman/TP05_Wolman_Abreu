@@ -246,6 +246,14 @@ public IActionResult Sala2Pociones()
             return View();
         }
 
+        [HttpPost]
+        public IActionResult CompletarBuscaminas()
+        {
+            if (!ValidarAcceso(3)) return RedirectToAction("Index");
+            HttpContext.Session.SetInt32("SalaActual", 4);
+            return RedirectToAction("Sala4");
+        }
+
         public IActionResult Sala4()
         {
             // if (!ValidarAcceso(4)) return RedirectToAction("Index"); // Desactivado para pruebas

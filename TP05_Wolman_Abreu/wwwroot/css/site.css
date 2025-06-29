@@ -18,11 +18,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  cursor: url('/img/varita.png'), auto; /*no funciona esto me voy a matar*/ 
+  min-height: 100vh;
+  cursor: url('/img/varita.png'), auto;
   display: flex;
   flex-direction: column;
   font-family: 'HarryP', serif;
+  background: none !important;
 }
 
 body *:hover {
@@ -44,8 +45,13 @@ width: 100%;
 /* Estilos para InstruccionesJuego FALTA FONDO*/
 .Instrucciones{
 width: 100%;
-background-image: url('/img/hogwarts.jpg');
+background-image: url('/img/cartaabierta.jpg');
 background-size:cover;
+font-family: Arial, sans-serif;
+}
+
+.Instrucciones h1, .Instrucciones h2 {
+  font-family: 'HarryP', serif;
 }
 
 /* Estilos para Ingreso (se ingresa nombre y casa) BIEN*/
@@ -116,12 +122,11 @@ border: 2px solid #dcb8a1;
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 22px !important;
+  border-radius: 0 !important;
   box-shadow: 0 4px 24px 0 #0008;
   width: 600px !important;
   max-width: 98vw !important;
   margin: 0 auto;
-  display: block;
 }
 
 
@@ -148,11 +153,11 @@ margin-bottom: 20px;
     background-color: transparent;
     border: none;
     /* Edita el ancho y alto del área clickeable de la carta de inicio aquí: */
-    width: 200px;   /* Cambia este valor para el ancho */
-    height: 80px;   /* Cambia este valor para la altura */
+    width: 97px;   /* Cambia este valor para el ancho */
+    height: 77px;   /* Cambia este valor para la altura */
     position: absolute;
     /* Edita la posición del botón aquí: */
-    top: 55%;      /* Cambia este valor para moverlo verticalmente */
+    top: 60%;      /* Cambia este valor para moverlo verticalmente */
     left: 51.5%;   /* Cambia este valor para moverlo horizontalmente */
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -163,11 +168,11 @@ margin-bottom: 20px;
     background-color: transparent;
     border: none;
     /* Edita el ancho y alto del área clickeable de Gryffindor aquí: */
-    width: 180px;
-    height: 70px;
+    width: 380px;
+    height: 80px;
     position: absolute;
     /* Edita la posición del botón aquí: */
-    top: 60%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -204,11 +209,11 @@ font-size: 1.35rem;
 .slytherin-link {
     background-color: transparent;
     border: none;
-    width: 180px;
-    height: 70px;
+    width: 380px;
+    height: 90px;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 90%;
+    left: 47%;
     transform: translate(-50%, -50%);
     z-index: 10;
     display: block;
@@ -244,10 +249,11 @@ font-size: 1.35rem;
 .ravenclaw-link {
     background-color: transparent;
     border: none;
-    width: 180px;
-    height: 70px;
+    width: 380px;
+    height: 90px;
     position: absolute;
-    top: 60%;
+    /* Edita la posición del botón aquí: */
+    top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -284,11 +290,12 @@ font-size: 1.35rem;
 .hufflepuff-link {
     background-color: transparent;
     border: none;
-    width: 180px;
-    height: 70px;
+    width: 380px;
+    height: 90px;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    /* Edita la posición del botón aquí: */
+    top: 92%;
+    left: 48%;
     transform: translate(-50%, -50%);
     z-index: 10;
     display: block;
@@ -350,19 +357,47 @@ opacity: 0.9;
   vertical-align: top;
 }
 
-.pociones-container {
+.sala-pociones {
+  width: 100%;
+  min-height: 100vh;
   background-image: url('/img/mesaPociones.jpg');
   background-size: cover;
-  padding: 20px;
-  min-height: 100vh;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.sala-pociones h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FFD700;
+  text-shadow: 2px 2px 8px #000;
+  font-family: 'HarryP', serif;
+  margin-bottom: 1.2rem;
+  padding-top: 20px;
+}
+
+.sala-pociones p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.pociones-container {
+  background: transparent;
+  padding: 20px;
+  min-height: 60vh;
   text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 100px;
+  margin-top: -90px;
 }
 
 /* CÓDIGO NUEVO: Estilos para botones con imágenes */
@@ -387,6 +422,12 @@ opacity: 0.9;
 
 .btn-pocion:active {
   transform: translateY(0);
+}
+
+/* Poción violeta más grande */
+.pocion:nth-child(2) .btn-pocion img {
+  width: 170px;
+  height: auto;
 }
 
 /* Estilos para mensajes de error en pociones */
@@ -525,15 +566,13 @@ opacity: 0.9;
 }
 
 main {
-    flex-grow: 1;
+    flex: 1 0 auto;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    position: static !important;
     width: 100%;
+    z-index: 100;
 }
 
 #dragArea {
@@ -561,29 +600,50 @@ footer {
 
 /* Contenedor de instrucciones tipo pergamino con fondo de carta abierta */
 .Instrucciones {
-  background: url('/img/cartaabierta.jpg') center/cover no-repeat;
-  border: 4px solid #FFD700;
-  border-radius: 18px;
-  box-shadow: 0 0 30px 8px #2d1a05;
-  padding: 2rem 2.5rem;
-  margin: 3rem auto;
+  width: 100%;
+  background-image: url('/img/cartaabiertaZoom.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 80px;
   max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  z-index: 2;
-  font-family: 'Times New Roman', serif;
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUp 1.2s ease-out forwards;
-  color: #3d1a00;
-  /* Para mejorar la legibilidad sobre la imagen */
-  text-shadow: 1px 1px 6px #fff8, 0 0 2px #fff8;
+  top: 0;
+  background-color: rgba(255, 230, 150, 0.85);
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 30px 8px #dcb86a;
+  color: #7B1F1F;
+  text-shadow: 1px 1px 6px #fff8, 0 0 2px #dcb86a;
+  border: 2.5px solid #FFD700;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.btn-volver-instrucciones {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  background: rgba(255, 255, 220, 0.85);
+  color: #7B1F1F;
+  font-family: 'HarryP', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 2.5px solid #FFD700;
+  border-radius: 14px;
+  padding: 10px 28px;
+  text-decoration: none;
+  box-shadow: 0 2px 12px 0 rgba(220,184,106,0.18);
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  z-index: 100;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 6px #fff8, 0 0 2px #dcb86a;
+}
+.btn-volver-instrucciones:hover {
+  background: #FFD700;
+  color: #222;
+  border: 2.5px solid #7B1F1F;
+  box-shadow: 0 4px 18px 0 #FFD70055;
 }
 
 .instrucciones-titulo {
@@ -641,12 +701,11 @@ footer {
 
 /* --- Borde redondeado para carta cerrada --- */
 .carta-base {
-  border-radius: 22px !important;
+  border-radius: 0 !important;
   box-shadow: 0 4px 24px 0 #0008;
   width: 600px !important;
   max-width: 98vw !important;
   margin: 0 auto;
-  display: block;
 }
 
 /* --- Botón '¿Cómo jugar?' centrado, sin fondo y con mejor padding --- */
@@ -707,4 +766,220 @@ footer {
   font-family: 'HarryP', serif;
   margin-bottom: 1.2rem;
   text-align: center;
+}
+
+/* Overlay del dementor para Sala 2 Pociones */
+.dementor-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dementor-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.dementor-content video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.dementor-content .btn {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+  z-index: 1001;
+}
+
+.dementor-content .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.7);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pistas para Sala 2 Pociones */
+.pistas-container {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.pistas-container h3 {
+  color: #FFD700;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.pistas-container .pista-principal {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #FFD700;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.pistas-container .pista-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #FFD700;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.pistas-container .pista-peligrosa {
+  background: rgba(255, 0, 0, 0.2);
+  border-left: 3px solid #ff4444;
+  color: #ffcccc;
+}
+
+/* Botón de transición entre salas */
+.btn-transicion {
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-family: 'HarryP', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-transicion:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(45deg, #FFA500, #FFD700);
+}
+
+.transicion-container {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border: 3px solid #FFD700;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.transicion-container h2 {
+  color: #FFD700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'HarryP', serif;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.transicion-container p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botón para saltar a sala 4 */
+.btn-saltar-sala4 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff4444, #cc0000);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 68, 68, 0.4);
+  z-index: 9999;
+}
+
+.btn-saltar-sala4:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 68, 68, 0.6);
+  background: linear-gradient(45deg, #cc0000, #ff4444);
+}
+
+h1, h2, .titulo-grande {
+  font-family: 'HarryP', serif;
+}
+
+.exitos-harry {
+  font-family: 'HarryP', serif;
+}
+
+.memotest-grid {
+  margin-bottom: 0;
+}
+.container.mt-4 {
+  padding-bottom: 70px;
 }

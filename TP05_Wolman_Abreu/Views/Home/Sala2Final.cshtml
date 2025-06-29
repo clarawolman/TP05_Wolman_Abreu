@@ -6,13 +6,32 @@
     <source src="/video/aceptacionCaliz.mp4" type="video/mp4">
 </video>
 
+<!-- Botón para saltar a sala 4 -->
+<a href="/Home/Sala4" class="btn-saltar-sala4">🚀 Saltar a Sala 4</a>
+
 <div class="sala2-final">
     <h2 class="titulo-grande scale-hover">¡Felicidades!</h2>
     <p class="texto-grande scale-hover">Has superado el desafío del Cáliz de Fuego.</p>
-    <form method="post" asp-action="Sala3">
-        <button type="submit" class="btn btn-primary btn-lg">Avanzar a la siguiente sala</button>
+    <form method="post" asp-action="Sala3" class="form-boton-final">
+        <button type="submit" class="btn-transicion-blur btn-chico">
+            Continuar al Desafío de las Pociones
+        </button>
     </form>
 </div>
+
+<audio id="audio-victory" src="/audio/victory.mp3"></audio>
+
+<script>
+// Reproducir sonido de victoria al cargar la página
+window.addEventListener('load', function() {
+    const audio = document.getElementById('audio-victory');
+    if (audio) {
+        audio.currentTime = 0;
+        audio.play().catch(e => console.log('Audio no pudo reproducirse:', e));
+    }
+});
+</script>
+
 <style>
 .sala2-final {
     width: 100%;
@@ -20,33 +39,79 @@
     background-image: none !important;
     background: transparent !important;
     text-align: center;
-    padding: 40px 20px;
+    padding: 0 20px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
 }
 
-.caliz-victoria {
-    margin: 40px 0;
-}
-@@keyframes brillar {
-    0% { filter: brightness(1);}
-    50% { filter: brightness(1.5);}
-    100% { filter: brightness(1);}
-}
-
-.btn-lg {
-    padding: 15px 30px;
-    font-size: 1.2em;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #333;
-    color: #333;
-    font-weight: bold;
-    transition: all 0.3s ease;
+.titulo-grande {
+    font-size: 2.2rem;
+    color: #fff;
+    font-family: 'HarryP', serif;
+    text-shadow: 2px 2px 8px #000;
+    letter-spacing: 2px;
+    margin-bottom: 0.7rem;
+    text-align: center;
 }
 
-.btn-lg:hover {
-    background-color: rgba(255, 255, 255, 1);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.texto-grande {
+    font-size: 1.1rem;
+    color: #fff;
+    text-shadow: 1px 1px 6px #000;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.titulo-grande.scale-hover:hover, .texto-grande.scale-hover:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s;
+}
+
+.form-boton-final {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 40px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.btn-transicion-blur {
+    background: rgba(30, 30, 40, 0.7);
+    color: #fff;
+    border: 1.5px solid #444a;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 16px;
+    padding: 0.7rem 1.5rem;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+    transition: all 0.2s;
+    pointer-events: auto;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn-chico {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.1rem;
+}
+
+.btn-transicion-blur:hover {
+    background: rgba(60, 60, 90, 0.92);
+    color: #b6b6ff;
+    border: 1.5px solid #6a6aff;
+    box-shadow: 0 0 16px 2px #6a6aff44;
+    transform: scale(1.04);
 }
 </style>

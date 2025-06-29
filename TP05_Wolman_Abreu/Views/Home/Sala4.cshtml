@@ -2,60 +2,80 @@
     ViewData["Title"] = "Sala 4 - Mar";
 }
 <link rel="stylesheet" href="/css/sala4.css" />
+<style>
+html, body {
+    height: 100% !important;
+    min-height: 100vh !important;
+}
+.fondo-sala4 {
+    background-image: url('/img/fondoSala4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+}
+body, .sala4-bg {
+    background-image: url('/img/fondoSala4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.hechizo {
+    background: none !important;
+    color: #fff !important;
+    border: 2px solid #FFD700 !important;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-family: 'HarryP', serif;
+    font-size: 1.1rem;
+    margin: 0 6px;
+    cursor: pointer;
+    box-shadow: none !important;
+    transition: border 0.2s, color 0.2s;
+}
+.hechizo:hover {
+    border: 2px solid #fff !important;
+    color: #FFD700 !important;
+}
+</style>
+<div class="fondo-sala4">
 <h2>Sala 4 - Mar</h2>
-<div id="pistas-container">
-    <div class="pista">
-        <b>Cueva oscura</b> (arriba izquierda)<br/>
-        <span class="emoji">🔮</span> <b>Hechizo:</b> Lumos<br/>
-        <span class="emoji">💡</span> <b>Pista:</b> La entrada es completamente negra, no se ve qué hay adentro. La oscuridad sugiere que necesitás luz para avanzar sin peligro.
+<div id="pistas-container" style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 18px;">
+    <div style="display: flex; gap: 12px; width: 100%; justify-content: center;">
+        <div class="pista"> <b>Cueva oscura</b><br/><b>Pista:</b> La entrada es completamente negra, no se ve qué hay adentro. No podrás avanzar así.</div>
+        <div class="pista"> <b>Puerta mágica</b><br/><b>Pista:</b>Esta parece cerrada, posiblemente con magia. Deberás usarla para poder pasar. </div>
+        <div class="pista"> <b>Naufragio</b><br/><b>Pista:</b> El barco está roto y hundido. Para poder usarlo deberás arreglarlo.</div>
     </div>
-    <div class="pista">
-        <b>Puerta mágica brillante</b> (arriba derecha)<br/>
-        <span class="emoji">🔮</span> <b>Hechizo:</b> Alohomora<br/>
-        <span class="emoji">💡</span> <b>Pista:</b> Tiene un arco claramente definido como puerta, con brillos mágicos. Es una barrera que parece cerrada, posiblemente con magia.
-    </div>
-    <div class="pista">
-        <b>Naufragio</b> (centro)<br/>
-        <span class="emoji">🔮</span> <b>Hechizo:</b> Reparo<br/>
-        <span class="emoji">💡</span> <b>Pista:</b> El barco está roto o hundido. Se ve dañado, lo cual indica que un hechizo reparador sería útil para restaurarlo y usarlo.
-    </div>
-    <div class="pista">
-        <b>Roca con símbolos</b> (abajo izquierda)<br/>
-        <span class="emoji">🔮</span> <b>Hechizo:</b> Lumos<br/>
-        <span class="emoji">💡</span> <b>Pista:</b> Los símbolos antiguos o mágicos podrían necesitar ser iluminados para ser leídos o activados, como con tinta invisible o runas mágicas.
-    </div>
-    <div class="pista">
-        <b>Algas luminosas</b> (abajo derecha)<br/>
-        <span class="emoji">🔮</span> <b>Hechizo:</b> Lumos<br/>
-        <span class="emoji">💡</span> <b>Pista:</b> Aunque ya brillan, podrían estar ocultando un pasaje o un objeto. La idea es que el hechizo te ayude a revelar o encontrar algo oculto en el fondo.
+    <div style="display: flex; gap: 12px; width: 100%; justify-content: center;">
+        <div class="pista"> <b>Roca encantada</b><br/><b>Pista:</b>Los símbolos podrían ayudarte a decifrar algo... solo debes saber mirar... o revelar.</div>
+        <div class="pista"> <b>Algas venenosas</b><br/><b>Pista:</b>Debes controlarlas para poder seguir, usalas para avanzar o has que te despejen el camino.</div>
     </div>
 </div>
 <div id="mapa-container">
-    <img id="img-mapa" src="/images/mapa_merodeador_lago.jpg" alt="Mapa del lago" />
-    <div class="zona" id="cueva" data-correcto="reparo" style="left:10%;top:60%;">Cueva</div>
-    <div class="zona" id="naufragio" data-correcto="finite" style="left:60%;top:70%;">Naufragio</div>
-    <div class="zona" id="roca" data-correcto="alohomora" style="left:40%;top:30%;">Roca con símbolos</div>
-    <div class="zona" id="algas" data-correcto="lumos" style="left:70%;top:40%;">Algas luminosas</div>
-    <div class="zona" id="puerta" data-correcto="wingardium" style="left:20%;top:10%;">Puerta mágica</div>
+    <img id="img-mapa" src="/img/mapa_merodeadores.png" alt="Mapa del lago" />
+    <div class="zona" id="cueva" data-correcto="lumos" style="left:8%;top:34%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Cueva peligrosa</div>
+    <div class="zona" id="barco" data-correcto="naufragio" style="left:36%;top:60%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Barco</div>
+    <div class="zona" id="roca" data-correcto="revelio" style="left:10%;top:85%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Roca encantada</div>
+    <div class="zona" id="algas" data-correcto="herbivicus" style="left:67%;top:85%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Algas luminosas</div>
+    <div class="zona" id="puerta" data-correcto="alohomora" style="left:67%;top:30%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Puerta mágica</div>
 </div>
 <div id="hechizos-container">
-    <div class="hechizo" draggable="true" data-hechizo="lumos"><img src="/images/hechizo_lumos.png" alt="Lumos" /></div>
-    <div class="hechizo" draggable="true" data-hechizo="reparo"><img src="/images/hechizo_reparo.png" alt="Reparo" /></div>
-    <div class="hechizo" draggable="true" data-hechizo="alohomora"><img src="/images/hechizo_alohomora.png" alt="Alohomora" /></div>
-    <div class="hechizo" draggable="true" data-hechizo="wingardium"><img src="/images/hechizo_wingardium.png" alt="Wingardium Leviosa" /></div>
-    <div class="hechizo" draggable="true" data-hechizo="finite"><img src="/images/hechizo_finite.png" alt="Finite" /></div>
+    <div class="hechizo" draggable="true" data-hechizo="revelio"><p>Revelio</p></div>
+    <div class="hechizo" draggable="true" data-hechizo="alohomora"><p>Alohomora</p></div>
+    <div class="hechizo" draggable="true" data-hechizo="herbivicus"><p>Herbivicus</p></div>
+    <div class="hechizo" draggable="true" data-hechizo="lumos"><p>Lumos</p></div>
+    <div class="hechizo" draggable="true" data-hechizo="naufragio"><p>Naufragio</p></div>
 </div>
 <div id="feedback"></div>
-<div id="secuencia-container" style="display:none;">
-    <h3>Secuencia del duende acuático</h3>
-    <div id="secuencia-hechizos"></div>
-    <div id="opciones-secuencia"></div>
-    <div id="feedback-secuencia"></div>
-</div>
 <audio id="audio-error" src="/audio/magia_fallida.mp3"></audio>
 <audio id="audio-exito" src="/audio/magia_exito.mp3"></audio>
+<audio id="audio-victory" src="/audio/victory.mp3"></audio>
 <script src="/js/sala4.js"></script>
+<script>document.body.classList.add('sala4-bg');</script>
 @if (ViewBag.Mensaje != null)
 {
     <div class="alert alert-danger">@ViewBag.Mensaje</div>
 }
+</div>

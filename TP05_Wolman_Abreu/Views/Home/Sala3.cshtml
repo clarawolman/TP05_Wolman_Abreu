@@ -1,28 +1,45 @@
 @{
-    ViewData["Title"] = "Sala 3 - Dragón";
+    ViewData["Title"] = "Sala 3 - Buscaminas de Pociones";
 }
+
 <link rel="stylesheet" href="/css/sala3.css" />
-<h2>Sala 3 - Dragón</h2>
-<p>Avanzá hacia el huevo dorado sin pisar baldosas ruidosas.</p>
-<div id="sala3-container">
-    <img id="img-sala3" src="/images/sala3_baldosas.jpg" alt="Sala 3" />
-    <!-- Las baldosas se superponen con botones invisibles -->
-    <div class="baldosa" data-x="0" data-y="3"></div>
-    <div class="baldosa" data-x="1" data-y="3"></div>
-    <div class="baldosa" data-x="2" data-y="3"></div>
-    <div class="baldosa" data-x="3" data-y="3"></div>
-    <div class="baldosa" data-x="4" data-y="3"></div>
-    <div class="baldosa" data-x="4" data-y="2"></div>
-    <div class="baldosa" data-x="4" data-y="1"></div>
-    <div class="baldosa" data-x="4" data-y="0" id="huevo"></div>
+
+<!-- Botón para saltar a sala 4 -->
+<a href="/Home/Sala4" class="btn-saltar-sala4">🚀 Saltar a Sala 4</a>
+
+<div class="sala3-container">
+    <h2>Sala 3 - Buscaminas de Pociones</h2>
+    <p class="buscaminas-info">En este buscaminas hay <b>6 ingredientes malditos</b>. ¡Evítalos para avanzar!</p>
+    
+    <div class="legend">
+        <h3>Leyenda de Ingredientes:</h3>
+        <div class="legend-items">
+            <div class="legend-item">
+                <span class="legend-icon">✅</span>
+                <span>Ingrediente Seguro</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-icon">💀</span>
+                <span>Ingrediente Maldito</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-icon">🔢</span>
+                <span>Número de malditos cercanos</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="new-game-btn" class="btn-magic">Nueva Poción</button>
+    </div>
+
+    <div id="game-board" class="game-board">
+        <!-- El tablero se genera dinámicamente con JavaScript -->
+    </div>
+
+    <div id="game-message" class="game-message"></div>
 </div>
-<audio id="audio-dragon" src="/audio/dragon_roar.mp3"></audio>
-<audio id="audio-paso" src="/audio/paso_alfombra.mp3"></audio>
+
+<audio id="audio-explosion" src="/audio/explosion.mp3"></audio>
+
 <script src="/js/sala3.js"></script>
-@if (ViewBag.Mensaje != null)
-{
-    <div class="alert alert-danger">@ViewBag.Mensaje</div>
-}
-<div style="text-align:center; margin-top:30px;">
-    <a href="/Home/Sala4" class="btn btn-primary">Ir a Sala 4 (prueba)</a>
-</div>

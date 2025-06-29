@@ -2,23 +2,20 @@
     ViewData["Title"] = "Sala 2 - Pociones";
 }
 
-@if (ViewBag.Mensaje != null)
-{
-    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 80vh;">
-        <video autoplay loop muted playsinline style="max-width: 480px; width: 100%; border-radius: 18px; box-shadow: 0 0 30px #000; margin-bottom: 24px;">
-            <source src="/video/dementor.mp4" type="video/mp4">
-            Tu navegador no soporta el video.
-        </video>
-        <form method="post" asp-action="Sala2Pociones">
-            <button type="submit" class="btn btn-primary" style="font-size:1.2rem; padding: 0.7rem 2.5rem; border-radius: 12px;">Intentar de nuevo</button>
-        </form>
-    </div>
-}
-else
-{
 <section class="sala-pociones">
     <h2>El Desafío de las Pociones</h2>
     <p>Una de estas pociones te permitirá avanzar. Las otras son peligrosas.</p>
+
+    <div class="pistas-container">
+        <h3>Pistas del Seleccionador de Pociones</h3>
+        <div class="pista-principal">
+            La poción correcta te salvará y dejará avanzar, la incorrecta te llevará por un mal camino. Lee bien y elige la poción de manera inteligente.
+        </div>
+        <div class="pista-item">La Sleeping Draught y la Draught of Peace tienen efectos similares. Solo una es más suave.</div>
+        <div class="pista-item">La Skele-Gro repara, pero el dolor que causa la hace inaceptable.</div>
+        <div class="pista-item">Sentirse eufórico puede parecer agradable, pero es una trampa peligrosa.</div>
+        <div class="pista-item">Para pode seguir jugando debes procurar no estar durmiendo gracias a una poción.</div>
+    </div>
 
     <section class="pociones-container">
         <form method="post" asp-action="ResolverPociones" id="pocionesForm">
@@ -51,6 +48,47 @@ else
     </section>
 </section>
 
+<!-- Overlay del dementor que aparece cuando se toca mal una poción -->
+@if (ViewBag.Mensaje != null)
+{
+    <div id="dementor-overlay" class="dementor-overlay">
+        <video autoplay loop muted playsinline class="dementor-video-full">
+            <source src="/video/dementor.mp4?v=2" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <div class="dementor-mc-absolute">
+            <div class="dementor-titulo-abs">Todo lo bueno está desapareciendo...<br>Protégete!</div>
+            <div class="dementor-opciones-abs">
+                <button type="button" class="opcion-dementor" data-correcto="false">Protego Totalum</button>
+                <button type="button" class="opcion-dementor" data-correcto="true">Expecto Patronum</button>
+                <button type="button" class="opcion-dementor" data-correcto="false">Avada Kedavra</button>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.querySelectorAll('.opcion-dementor').forEach(function(btn) {
+        btn.onclick = function() {
+            if (btn.dataset.correcto === "true") {
+                document.getElementById('dementor-overlay').style.display = 'none';
+            } else {
+                btn.style.background = '#7B1F1F88';
+                btn.style.color = '#fff';
+                btn.innerText = '¡Incorrecto!';
+                setTimeout(()=>{
+                  btn.innerText = btn.dataset.correcto === "false" ? btn.getAttribute('data-original') : 'Expecto Patronum';
+                  btn.style.background = '';
+                  btn.style.color = '';
+                }, 1200);
+            }
+        };
+        btn.setAttribute('data-original', btn.innerText);
+    });
+    </script>
+}
+
+<audio id="audio-pocion" src="/audio/tomarSound.mp3"></audio>
+<audio id="audio-victory" src="/audio/victory.mp3"></audio>
+
 <!-- JavaScript para mantener la posición de la página después del submit -->
 <script>
 // Mantener la posición de la página después de enviar el formulario
@@ -67,5 +105,94 @@ window.addEventListener('load', function() {
         sessionStorage.removeItem('scrollPosition');
     }
 });
+
+// Reproducir sonido cuando se hace click en una poción
+document.querySelectorAll('.btn-pocion').forEach(function(button) {
+    button.addEventListener('mousedown', function() {
+        const audio = document.getElementById('audio-pocion');
+        if (audio) {
+            audio.currentTime = 0;
+            audio.play();
+        }
+    });
+});
+
+// Reproducir sonido de victoria cuando se selecciona la poción correcta
+document.querySelector('button[value="correcta"]').addEventListener('click', function() {
+    const audio = document.getElementById('audio-victory');
+    if (audio) {
+        audio.currentTime = 0;
+        audio.play().catch(e => console.log('Audio no pudo reproducirse:', e));
+    }
+});
 </script>
+
+<!-- Mejorar botón del dementor -->
+<style>
+.dementor-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: #000;
+    z-index: 1000;
+    overflow: hidden;
 }
+.dementor-video-full {
+    position: absolute;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+.dementor-mc-absolute {
+    position: absolute;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    pointer-events: none;
+}
+.dementor-titulo-abs {
+    margin-top: 3.5vh;
+    color: #fff;
+    font-size: 1.35rem;
+    font-family: 'HarryP', serif;
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: auto;
+    padding: 12px 24px 8px 24px;
+    backdrop-filter: blur(6px);
+    background: none;
+    border-radius: 18px;
+    box-shadow: none;
+}
+.dementor-opciones-abs {
+    margin-bottom: 6vh;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    pointer-events: auto;
+    background: none;
+}
+.opcion-dementor {
+    background: none;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 12px 24px;
+    font-size: 1.05rem;
+    font-family: 'HarryP', serif;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    min-width: 120px;
+    pointer-events: auto;
+    backdrop-filter: blur(8px);
+    box-shadow: none;
+}
+.opcion-dementor:hover {
+    background: #FFD70055;
+    color: #222;
+}
+</style>
