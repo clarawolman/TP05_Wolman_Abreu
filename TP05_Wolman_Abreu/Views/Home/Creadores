@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Creadores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="creadores-container">
+    <div class="creador-card">
+        <img src="~/img/ClaraWolman.png" alt="Clara Wolman" class="creador-img" />
+        <div class="creador-nombre">Clara Wolman</div>
+    </div>
+    <div class="creador-card">
+        <img src="~/img/CeciAbreu.png" alt="Ceci Abreu" class="creador-img" />
+        <div class="creador-nombre">Ceci Abreu</div>
+    </div>
+</div>
