@@ -5,7 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 
 namespace EscapeRoom.Controllers
-{ 
+{
     public class HomeController : Controller
     {
         public IActionResult Index()
@@ -198,11 +198,11 @@ namespace EscapeRoom.Controllers
         }
 
         [HttpPost]
-public IActionResult Sala2Pociones()
-{
-    if (!ValidarAcceso(2)) return RedirectToAction("Index");
-    return View("Sala2Pociones");
-}
+        public IActionResult Sala2Pociones()
+        {
+            if (!ValidarAcceso(2)) return RedirectToAction("Index");
+            return View("Sala2Pociones");
+        }
 
         [HttpPost]
         public IActionResult TirarNombreAlCaliz()
@@ -270,5 +270,11 @@ public IActionResult Sala2Pociones()
         {
             return View();
         }
+        public IActionResult Creadores()
+        {
+            return View();
+        }
+    
+
     }
 }

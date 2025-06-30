@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QsBuzhrf0NszImGw8l4Z7B/QQgabD2NucBskkVAVXdY=",
+  "Hash": "OAd00ygC7CEHtKXqYlocAOO2vlhOo04varK5/JHWd90=",
   "Source": "TP05_Wolman_Abreu",
   "BasePath": "_content/TP05_Wolman_Abreu",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TP05_Wolman_Abreu\\wwwroot",
       "Source": "TP05_Wolman_Abreu",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\abrirCartaSound.mp3",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\abrirCartaSound.mp3",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "audio/abrirCartaSound.mp3",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\abrirCartaSound.mp3"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\explosion.mp3",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\explosion.mp3",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "audio/explosion.mp3",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\explosion.mp3"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\magia_fallida.mp3",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\magia_fallida.mp3",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "audio/magia_fallida.mp3",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\magia_fallida.mp3"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\tomarSound.mp3",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\tomarSound.mp3",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "audio/tomarSound.mp3",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\tomarSound.mp3"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\victoria.mp3",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\victoria.mp3",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "audio/victoria.mp3",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\victoria.mp3"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\HARRYP__.TTF",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\HARRYP__.TTF",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "fonts/HARRYP__.TTF",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\HARRYP__.TTF"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\harryp-readme.txt",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\harryp-readme.txt",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "fonts/harryp-readme.txt",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\harryp-readme.txt"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_basilisco.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_basilisco.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "images/cartas/imagen_basilisco.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cartas\\imagen_basilisco.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_hipogrifo.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_hipogrifo.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "images/cartas/imagen_hipogrifo.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cartas\\imagen_hipogrifo.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_thestral.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_thestral.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "images/cartas/imagen_thestral.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cartas\\imagen_thestral.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_basilisco.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_basilisco.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "images/cartas/nombre_basilisco.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cartas\\nombre_basilisco.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_hipogrifo.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_hipogrifo.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "images/cartas/nombre_hipogrifo.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cartas\\nombre_hipogrifo.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_thestral.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_thestral.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "images/cartas/nombre_thestral.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cartas\\nombre_thestral.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\reverso.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\reverso.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "images/cartas/reverso.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cartas\\reverso.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/caliz.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\caliz.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/caliz.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\img\\caliz.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\calizAcepta.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\calizAcepta.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/calizAcepta.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\img\\calizAcepta.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabierta.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabierta.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/cartaabierta.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\img\\cartaabierta.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabiertaZoom.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabiertaZoom.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/cartaabiertaZoom.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\img\\cartaabiertaZoom.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartacerrada.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartacerrada.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/cartacerrada.jpg",
       "AssetKind": "All",
@@ -435,10 +435,48 @@
       "OriginalItemSpec": "wwwroot\\img\\cartacerrada.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\clickCarta.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\CeciAbreu.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/CeciAbreu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\CeciAbreu.png"
+    },
+    {
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ClaraWolman.png",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "BasePath": "_content/TP05_Wolman_Abreu",
+      "RelativePath": "img/ClaraWolman.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ClaraWolman.png"
+    },
+    {
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\clickCarta.jpg",
+      "SourceId": "TP05_Wolman_Abreu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/clickCarta.jpg",
       "AssetKind": "All",
@@ -454,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\img\\clickCarta.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCaliz.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCaliz.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/fondoCaliz.png",
       "AssetKind": "All",
@@ -473,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondoCaliz.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCalizOG.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCalizOG.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/fondoCalizOG.png",
       "AssetKind": "All",
@@ -492,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondoCalizOG.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoGeneral.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoGeneral.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/fondoGeneral.png",
       "AssetKind": "All",
@@ -511,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondoGeneral.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoInstrucciones.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoInstrucciones.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/fondoInstrucciones.jpg",
       "AssetKind": "All",
@@ -530,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondoInstrucciones.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala3.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala3.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/fondoSala3.jpg",
       "AssetKind": "All",
@@ -549,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondoSala3.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala4.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala4.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/fondoSala4.png",
       "AssetKind": "All",
@@ -568,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fondoSala4.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindor.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindor.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/gryffindor.png",
       "AssetKind": "All",
@@ -587,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\img\\gryffindor.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindoresc.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindoresc.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/gryffindoresc.jpg",
       "AssetKind": "All",
@@ -606,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\img\\gryffindoresc.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/hogwarts.jpg",
       "AssetKind": "All",
@@ -625,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hogwarts.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuff.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuff.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/hufflepuff.png",
       "AssetKind": "All",
@@ -644,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hufflepuff.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuffesc.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuffesc.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/hufflepuffesc.jpg",
       "AssetKind": "All",
@@ -663,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hufflepuffesc.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mapa_merodeadores.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mapa_merodeadores.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/mapa_merodeadores.png",
       "AssetKind": "All",
@@ -682,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mapa_merodeadores.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mesaPociones.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mesaPociones.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/mesaPociones.jpg",
       "AssetKind": "All",
@@ -701,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mesaPociones.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\nombrePapel.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\nombrePapel.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/nombrePapel.png",
       "AssetKind": "All",
@@ -720,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\img\\nombrePapel.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_amarilla.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_amarilla.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/pocion_amarilla.png",
       "AssetKind": "All",
@@ -739,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\img\\pocion_amarilla.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_azul.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_azul.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/pocion_azul.png",
       "AssetKind": "All",
@@ -758,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\img\\pocion_azul.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_roja.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_roja.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/pocion_roja.png",
       "AssetKind": "All",
@@ -777,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\img\\pocion_roja.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_verde.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_verde.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/pocion_verde.png",
       "AssetKind": "All",
@@ -796,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\img\\pocion_verde.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_violeta.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_violeta.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/pocion_violeta.png",
       "AssetKind": "All",
@@ -815,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\img\\pocion_violeta.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclaw.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclaw.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/ravenclaw.png",
       "AssetKind": "All",
@@ -834,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ravenclaw.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclawesc.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclawesc.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/ravenclawesc.jpg",
       "AssetKind": "All",
@@ -853,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ravenclawesc.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherin.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherin.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/slytherin.png",
       "AssetKind": "All",
@@ -872,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slytherin.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherinesc.jpg",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherinesc.jpg",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/slytherinesc.jpg",
       "AssetKind": "All",
@@ -891,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slytherinesc.jpg"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varita.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varita.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/varita.png",
       "AssetKind": "All",
@@ -910,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\img\\varita.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varitaLumos.png",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varitaLumos.png",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "img/varitaLumos.png",
       "AssetKind": "All",
@@ -929,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\img\\varitaLumos.png"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala3.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala3.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "js/sala3.js",
       "AssetKind": "All",
@@ -948,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sala3.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala4.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala4.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "js/sala4.js",
       "AssetKind": "All",
@@ -967,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sala4.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -986,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1005,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1024,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1043,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1062,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1081,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1100,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1119,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1138,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1157,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1176,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1195,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1214,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\aceptacionCaliz.mp4",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\aceptacionCaliz.mp4",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "video/aceptacionCaliz.mp4",
       "AssetKind": "All",
@@ -1233,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\video\\aceptacionCaliz.mp4"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\cartaInicio.mp4",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\cartaInicio.mp4",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "video/cartaInicio.mp4",
       "AssetKind": "All",
@@ -1252,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\video\\cartaInicio.mp4"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\dementor.mp4",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\dementor.mp4",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "video/dementor.mp4",
       "AssetKind": "All",
@@ -1271,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\video\\dementor.mp4"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\ganaste.mp4",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\ganaste.mp4",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "video/ganaste.mp4",
       "AssetKind": "All",
@@ -1290,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\video\\ganaste.mp4"
     },
     {
-      "Identity": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\giratiempos.mp4",
+      "Identity": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\giratiempos.mp4",
       "SourceId": "TP05_Wolman_Abreu",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\",
       "BasePath": "_content/TP05_Wolman_Abreu",
       "RelativePath": "video/giratiempos.mp4",
       "AssetKind": "All",

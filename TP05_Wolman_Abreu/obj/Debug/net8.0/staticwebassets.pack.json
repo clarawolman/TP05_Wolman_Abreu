@@ -1,275 +1,283 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\abrirCartaSound.mp3",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\abrirCartaSound.mp3",
       "PackagePath": "staticwebassets\\audio\\abrirCartaSound.mp3"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\explosion.mp3",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\explosion.mp3",
       "PackagePath": "staticwebassets\\audio\\explosion.mp3"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\magia_fallida.mp3",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\magia_fallida.mp3",
       "PackagePath": "staticwebassets\\audio\\magia_fallida.mp3"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\tomarSound.mp3",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\tomarSound.mp3",
       "PackagePath": "staticwebassets\\audio\\tomarSound.mp3"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\victoria.mp3",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\audio\\victoria.mp3",
       "PackagePath": "staticwebassets\\audio\\victoria.mp3"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\HARRYP__.TTF",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\HARRYP__.TTF",
       "PackagePath": "staticwebassets\\fonts\\HARRYP__.TTF"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\harryp-readme.txt",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\fonts\\harryp-readme.txt",
       "PackagePath": "staticwebassets\\fonts\\harryp-readme.txt"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_basilisco.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_basilisco.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\imagen_basilisco.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_hipogrifo.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_hipogrifo.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\imagen_hipogrifo.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_thestral.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\imagen_thestral.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\imagen_thestral.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_basilisco.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_basilisco.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\nombre_basilisco.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_hipogrifo.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_hipogrifo.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\nombre_hipogrifo.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_thestral.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\nombre_thestral.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\nombre_thestral.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\reverso.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\images\\cartas\\reverso.jpg",
       "PackagePath": "staticwebassets\\images\\cartas\\reverso.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\CeciAbreu.png",
+      "PackagePath": "staticwebassets\\img\\CeciAbreu.png"
+    },
+    {
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ClaraWolman.png",
+      "PackagePath": "staticwebassets\\img\\ClaraWolman.png"
+    },
+    {
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.jpg",
       "PackagePath": "staticwebassets\\img\\caliz.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\caliz.png",
       "PackagePath": "staticwebassets\\img\\caliz.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\calizAcepta.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\calizAcepta.png",
       "PackagePath": "staticwebassets\\img\\calizAcepta.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabierta.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabierta.jpg",
       "PackagePath": "staticwebassets\\img\\cartaabierta.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabiertaZoom.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartaabiertaZoom.jpg",
       "PackagePath": "staticwebassets\\img\\cartaabiertaZoom.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartacerrada.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\cartacerrada.jpg",
       "PackagePath": "staticwebassets\\img\\cartacerrada.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\clickCarta.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\clickCarta.jpg",
       "PackagePath": "staticwebassets\\img\\clickCarta.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCaliz.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCaliz.png",
       "PackagePath": "staticwebassets\\img\\fondoCaliz.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCalizOG.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoCalizOG.png",
       "PackagePath": "staticwebassets\\img\\fondoCalizOG.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoGeneral.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoGeneral.png",
       "PackagePath": "staticwebassets\\img\\fondoGeneral.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoInstrucciones.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoInstrucciones.jpg",
       "PackagePath": "staticwebassets\\img\\fondoInstrucciones.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala3.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala3.jpg",
       "PackagePath": "staticwebassets\\img\\fondoSala3.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala4.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\fondoSala4.png",
       "PackagePath": "staticwebassets\\img\\fondoSala4.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindor.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindor.png",
       "PackagePath": "staticwebassets\\img\\gryffindor.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindoresc.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\gryffindoresc.jpg",
       "PackagePath": "staticwebassets\\img\\gryffindoresc.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hogwarts.jpg",
       "PackagePath": "staticwebassets\\img\\hogwarts.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuff.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuff.png",
       "PackagePath": "staticwebassets\\img\\hufflepuff.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuffesc.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\hufflepuffesc.jpg",
       "PackagePath": "staticwebassets\\img\\hufflepuffesc.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mapa_merodeadores.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mapa_merodeadores.png",
       "PackagePath": "staticwebassets\\img\\mapa_merodeadores.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mesaPociones.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\mesaPociones.jpg",
       "PackagePath": "staticwebassets\\img\\mesaPociones.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\nombrePapel.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\nombrePapel.png",
       "PackagePath": "staticwebassets\\img\\nombrePapel.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_amarilla.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_amarilla.png",
       "PackagePath": "staticwebassets\\img\\pocion_amarilla.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_azul.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_azul.png",
       "PackagePath": "staticwebassets\\img\\pocion_azul.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_roja.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_roja.png",
       "PackagePath": "staticwebassets\\img\\pocion_roja.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_verde.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_verde.png",
       "PackagePath": "staticwebassets\\img\\pocion_verde.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_violeta.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\pocion_violeta.png",
       "PackagePath": "staticwebassets\\img\\pocion_violeta.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclaw.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclaw.png",
       "PackagePath": "staticwebassets\\img\\ravenclaw.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclawesc.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\ravenclawesc.jpg",
       "PackagePath": "staticwebassets\\img\\ravenclawesc.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherin.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherin.png",
       "PackagePath": "staticwebassets\\img\\slytherin.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherinesc.jpg",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\slytherinesc.jpg",
       "PackagePath": "staticwebassets\\img\\slytherinesc.jpg"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varita.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varita.png",
       "PackagePath": "staticwebassets\\img\\varita.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varitaLumos.png",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\img\\varitaLumos.png",
       "PackagePath": "staticwebassets\\img\\varitaLumos.png"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala3.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala3.js",
       "PackagePath": "staticwebassets\\js\\sala3.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala4.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\sala4.js",
       "PackagePath": "staticwebassets\\js\\sala4.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\aceptacionCaliz.mp4",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\aceptacionCaliz.mp4",
       "PackagePath": "staticwebassets\\video\\aceptacionCaliz.mp4"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\cartaInicio.mp4",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\cartaInicio.mp4",
       "PackagePath": "staticwebassets\\video\\cartaInicio.mp4"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\dementor.mp4",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\dementor.mp4",
       "PackagePath": "staticwebassets\\video\\dementor.mp4"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\ganaste.mp4",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\ganaste.mp4",
       "PackagePath": "staticwebassets\\video\\ganaste.mp4"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\giratiempos.mp4",
+      "Id": "C:\\Users\\49359853\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\giratiempos.mp4",
       "PackagePath": "staticwebassets\\video\\giratiempos.mp4"
     },
     {
