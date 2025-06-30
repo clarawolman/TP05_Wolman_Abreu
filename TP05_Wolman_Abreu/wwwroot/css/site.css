@@ -3,7 +3,6 @@
   - algunos audios si otros no
 */
 
-/* Timer y Marcador de Salas */
 .game-header {
   position: fixed;
   top: 20px;
@@ -40,7 +39,6 @@
   box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
-/* Ocultar en páginas específicas */
 .hide-game-header .game-header {
   display: none;
 }
@@ -79,12 +77,10 @@ area:hover {
   cursor: pointer;
 }
 
-/* Estilos para Index (página principal) FALTA FONDO*/
 .Inicio {
 width: 100%;
 }
 
-/* Estilos para InstruccionesJuego FALTA FONDO*/
 .Instrucciones{
 width: 100%;
 background-image: url('/img/cartaabierta.jpg');
@@ -96,7 +92,6 @@ font-family: Arial, sans-serif;
   font-family: 'HarryP', serif;
 }
 
-/* Estilos para Ingreso (se ingresa nombre y casa) BIEN*/
 .Ingreso {
 width: 100%;
 height: 100vh;
@@ -122,7 +117,6 @@ position: relative;
 overflow-y: auto;
 }
 
-/* Estilos del formulario en Ingreso.cshtml BIEN*/
 .form-container {
 padding: 2rem;
 border-radius: 10px;
@@ -153,7 +147,6 @@ background-color: #dcb8a1(0, 0, 0, 0.7);
 border: 2px solid #dcb8a1;
 }
 
-/* Estilos para los escudos de las casas en Ingreso */
 .escudos-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -198,7 +191,6 @@ border: 2px solid #dcb8a1;
   border-radius: 8px;
 }
 
-/* Estilos para la carta en Ingreso.cshtml BIEN*/
 .carta-container {
   position: relative;
   display: inline-block;
@@ -217,7 +209,6 @@ border: 2px solid #dcb8a1;
 }
 
 
-/* Estilos compartidos para los párrafos en las salas de las casas */
 .sala-gryffindor p, .sala-ravenclaw p, .sala-hufflepuff p, .sala-slytherin p {
 margin-bottom: 20px;
   text-align: center;
@@ -336,7 +327,6 @@ font-size: 1.35rem;
     width: 380px;
     height: 90px;
     position: absolute;
-    /* Edita la posición del botón aquí: */
     top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -377,7 +367,6 @@ font-size: 1.35rem;
     width: 380px;
     height: 90px;
     position: absolute;
-    /* Edita la posición del botón aquí: */
     top: 92%;
     left: 48%;
     transform: translate(-50%, -50%);
@@ -400,7 +389,6 @@ outline: none;
   text-align: center;
 }
 
-/* Pista del libro en las salas 1 */
 .pista-libro {
   color: #fff;
   font-size: 1.35rem;
@@ -668,7 +656,6 @@ footer {
   font-size: 1.35rem;
 }
 
-/* Overlay oscuro para el fondo */
 .fondo-overlay {
   position: fixed;
   top: 0; left: 0; width: 100vw; height: 100vh;
@@ -677,7 +664,6 @@ footer {
   pointer-events: none;
 }
 
-/* Contenedor de instrucciones tipo pergamino con fondo de carta abierta */
 .Instrucciones {
   width: 100%;
   background-image: url('/img/cartaabiertaZoom.jpg');
@@ -757,7 +743,6 @@ footer {
   top: 0;
 }
 
-/* --- Palabras grandes y blancas --- */
 .titulo-grande {
   font-size: 3.2rem;
   color: #fff;
@@ -786,7 +771,6 @@ footer {
   margin: 0 auto;
 }
 
-/* --- Botón '¿Cómo jugar?' centrado, sin fondo y con mejor padding --- */
 .btn-como-jugar {
   display: block;
   margin: 1.2rem auto 1.5rem auto;
@@ -1127,7 +1111,6 @@ h1, h2, .titulo-grande {
   font-family: 'HarryP', serif;
   text-shadow: 2px 2px 6px #000;
 }
-/* Sala 3 - Buscaminas de Pociones */
 .sala3-container {
   width: 100%;
   margin: 0;
@@ -1159,7 +1142,6 @@ h1, h2, .titulo-grande {
   text-shadow: 1px 1px 4px #000;
 }
 
-/* Leyenda - ahora arriba */
 .legend {
   background: rgba(255, 255, 255, 0.1);
   padding: 15px;
@@ -1195,7 +1177,6 @@ h1, h2, .titulo-grande {
   font-size: 1.5rem;
 }
 
-/* Controles */
 .controls {
   text-align: center;
   margin-bottom: 20px;
@@ -1221,7 +1202,6 @@ h1, h2, .titulo-grande {
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
 }
 
-/* Tablero del juego */
 .game-board {
   display: flex;
   justify-content: center;
@@ -1291,7 +1271,6 @@ h1, h2, .titulo-grande {
   100% { transform: scale(1); }
 }
 
-/* Mensajes del juego */
 .game-message {
   text-align: center;
   margin: 20px 0;
@@ -1324,7 +1303,6 @@ h1, h2, .titulo-grande {
   75% { transform: translateX(5px); }
 }
 
-/* Información del juego */
 .game-info {
   display: flex;
   justify-content: space-around;
@@ -1352,7 +1330,6 @@ h1, h2, .titulo-grande {
   color: white;
 }
 
-/* Lista de ingredientes */
 .ingredients-list {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
@@ -1384,7 +1361,6 @@ h1, h2, .titulo-grande {
   font-size: 1rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .sala3-container {
       padding: 10px;
@@ -1415,7 +1391,6 @@ h1, h2, .titulo-grande {
   }
 }
 
-/* Efectos especiales */
 .cell.safe-reveal {
   animation: safeReveal 0.3s ease-in-out;
 }
