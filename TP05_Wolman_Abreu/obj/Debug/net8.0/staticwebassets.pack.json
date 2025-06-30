@@ -21,14 +21,6 @@
       "PackagePath": "staticwebassets\\audio\\victoria.mp3"
     },
     {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\sala3.css",
-      "PackagePath": "staticwebassets\\css\\sala3.css"
-    },
-    {
-      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\sala4.css",
-      "PackagePath": "staticwebassets\\css\\sala4.css"
-    },
-    {
       "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -271,6 +263,14 @@
     {
       "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\dementor.mp4",
       "PackagePath": "staticwebassets\\video\\dementor.mp4"
+    },
+    {
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\ganaste.mp4",
+      "PackagePath": "staticwebassets\\video\\ganaste.mp4"
+    },
+    {
+      "Id": "C:\\Users\\49359\\OneDrive\\Desktop\\TP05_Wolman_Abreu\\TP05_Wolman_Abreu\\wwwroot\\video\\giratiempos.mp4",
+      "PackagePath": "staticwebassets\\video\\giratiempos.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TP05_Wolman_Abreu.Microsoft.AspNetCore.StaticWebAssets.props",

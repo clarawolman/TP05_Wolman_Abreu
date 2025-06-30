@@ -1,62 +1,23 @@
 @{
     ViewData["Title"] = "Sala 4 - Mar";
 }
-<link rel="stylesheet" href="/css/sala4.css" />
-<style>
-html, body {
-    height: 100% !important;
-    min-height: 100vh !important;
-}
-.fondo-sala4 {
-    background-image: url('/img/fondoSala4.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width: 100vw;
-}
-body, .sala4-bg {
-    background-image: url('/img/fondoSala4.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-.hechizo {
-    background: none !important;
-    color: #fff !important;
-    border: 2px solid #FFD700 !important;
-    border-radius: 12px;
-    padding: 10px 22px;
-    font-family: 'HarryP', serif;
-    font-size: 1.1rem;
-    margin: 0 6px;
-    cursor: pointer;
-    box-shadow: none !important;
-    transition: border 0.2s, color 0.2s;
-}
-.hechizo:hover {
-    border: 2px solid #fff !important;
-    color: #FFD700 !important;
-}
-</style>
 <div class="fondo-sala4">
-<h2>Sala 4 - Mar</h2>
+<h2 class="mensaje-motivador">Usa tus conocimientos en hechizos</h2>
 <div id="pistas-container" style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 18px;">
     <div style="display: flex; gap: 12px; width: 100%; justify-content: center;">
-        <div class="pista"> <b>Cueva oscura</b><br/><b>Pista:</b> La entrada es completamente negra, no se ve qué hay adentro. No podrás avanzar así.</div>
-        <div class="pista"> <b>Puerta mágica</b><br/><b>Pista:</b>Esta parece cerrada, posiblemente con magia. Deberás usarla para poder pasar. </div>
-        <div class="pista"> <b>Naufragio</b><br/><b>Pista:</b> El barco está roto y hundido. Para poder usarlo deberás arreglarlo.</div>
+        <div class="pista pista-normal"> <b>Cueva oscura</b><br/><b>Pista:</b> La entrada es completamente negra, no se ve qué hay adentro. No podrás avanzar así.</div>
+        <div class="pista pista-normal"> <b>Puerta mágica</b><br/><b>Pista:</b>Esta parece cerrada, posiblemente con magia. Deberás usarla para poder pasar. </div>
+        <div class="pista pista-normal"> <b>Naufragio</b><br/><b>Pista:</b> El barco está roto y hundido. Para poder usarlo deberás arreglarlo.</div>
     </div>
     <div style="display: flex; gap: 12px; width: 100%; justify-content: center;">
-        <div class="pista"> <b>Roca encantada</b><br/><b>Pista:</b>Los símbolos podrían ayudarte a decifrar algo... solo debes saber mirar... o revelar.</div>
-        <div class="pista"> <b>Algas venenosas</b><br/><b>Pista:</b>Debes controlarlas para poder seguir, usalas para avanzar o has que te despejen el camino.</div>
+        <div class="pista pista-normal"> <b>Roca encantada</b><br/><b>Pista:</b>Los símbolos podrían ayudarte a decifrar algo... solo debes saber mirar... o revelar.</div>
+        <div class="pista pista-normal"> <b>Algas venenosas</b><br/><b>Pista:</b>Debes controlarlas para poder seguir, usalas para avanzar o has que te despejen el camino.</div>
     </div>
 </div>
 <div id="mapa-container">
     <img id="img-mapa" src="/img/mapa_merodeadores.png" alt="Mapa del lago" />
     <div class="zona" id="cueva" data-correcto="lumos" style="left:8%;top:34%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Cueva peligrosa</div>
-    <div class="zona" id="barco" data-correcto="naufragio" style="left:36%;top:60%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Barco</div>
+    <div class="zona" id="barco" data-correcto="reparo" style="left:36%;top:60%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Barco hundido</div>
     <div class="zona" id="roca" data-correcto="revelio" style="left:10%;top:85%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Roca encantada</div>
     <div class="zona" id="algas" data-correcto="herbivicus" style="left:67%;top:85%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Algas luminosas</div>
     <div class="zona" id="puerta" data-correcto="alohomora" style="left:67%;top:30%;background:none !important;border:none !important;color:#fff;font-weight:bold;">Puerta mágica</div>
@@ -66,7 +27,7 @@ body, .sala4-bg {
     <div class="hechizo" draggable="true" data-hechizo="alohomora"><p>Alohomora</p></div>
     <div class="hechizo" draggable="true" data-hechizo="herbivicus"><p>Herbivicus</p></div>
     <div class="hechizo" draggable="true" data-hechizo="lumos"><p>Lumos</p></div>
-    <div class="hechizo" draggable="true" data-hechizo="naufragio"><p>Naufragio</p></div>
+    <div class="hechizo" draggable="true" data-hechizo="reparo"><p>Reparo</p></div>
 </div>
 <div id="feedback"></div>
 <audio id="audio-error" src="/audio/magia_fallida.mp3"></audio>

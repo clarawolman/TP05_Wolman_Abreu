@@ -3,11 +3,24 @@
 }
 
 <div class="sala-slytherin">
-    <h2>Sala 1 - Slytherin</h2>
+    <h2>Slytherin</h2>
     <div class="row mt-4">
         <div class="col-12">
+            <p class="pista-libro">El conocimiento puede abrir puertas… si sabés cuál consultar.</p>
             <p>Jugá frío, pensá rápido. El poder espera.</p>
-            <a href='@Url.Action("SalaMemotest")' class="slytherin-link"></a>
+            <a href='@Url.Action("SalaMemotest")' class="slytherin-link" id="slytherin-link"></a>
         </div>
     </div>
 </div>
+
+<audio id="audio-victory" src="/audio/victory.mp3"></audio>
+
+<script>
+document.getElementById('slytherin-link').addEventListener('click', function() {
+    const audio = document.getElementById('audio-victory');
+    if(audio) { 
+        audio.currentTime = 0; 
+        audio.play().catch(e => console.log('Audio no pudo reproducirse:', e));
+    }
+});
+</script>

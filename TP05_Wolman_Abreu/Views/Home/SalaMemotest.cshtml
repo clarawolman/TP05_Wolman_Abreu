@@ -2,102 +2,45 @@
     ViewData["Title"] = "Memotest";
 }
 
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center mb-4">Encuentra los pares de cartas</h2>
-        </div>
-    </div>
-
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
-            <div class="memotest-grid">
-                @{
-                    var cartas = Context.Session.GetString("CartasMezcladas")?.Split(',') ?? new string[0];
-                    var volteadas = Context.Session.GetString("Volteadas")?.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList() ?? new List<int>();
-                    var encontradas = Context.Session.GetString("Encontradas")?.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList() ?? new List<int>();
-                    var salaActual = Context.Session.GetInt32("SalaActual");
-
-                    for (int i = 0; i < cartas.Length; i++)
-                    {
-                        var mostrarCarta = volteadas.Contains(i) || encontradas.Contains(i);
-                        var imagenMostrar = mostrarCarta ? cartas[i] : "reverso.jpg";
-                        <div class="card-container">
-                            <form asp-action="TocarCarta" method="post" class="m-1">
-                                <input type="hidden" name="index" value="@i" />
-                                <button type="submit" class="btn p-0 @(mostrarCarta ? "disabled" : "")" @(mostrarCarta ? "disabled" : "")>
-                                    <img src="~/images/cartas/@imagenMostrar" class="carta-memotest" alt="Carta" />
-                                </button>
-                            </form>
-                        </div>
-                    }
+<div class="memotest-container">
+    <div class="memotest-content">
+        <h2>Encuentra los pares de cartas y avanza</h2>
+        <div class="memotest-grid">
+            @{
+                var cartas = Context.Session.GetString("CartasMezcladas")?.Split(',') ?? new string[0];
+                var volteadas = Context.Session.GetString("Volteadas")?.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList() ?? new List<int>();
+                var encontradas = Context.Session.GetString("Encontradas")?.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList() ?? new List<int>();
+                var salaActual = Context.Session.GetInt32("SalaActual");
+                for (int i = 0; i < cartas.Length; i++)
+                {
+                    var mostrarCarta = volteadas.Contains(i) || encontradas.Contains(i);
+                    var imagenMostrar = mostrarCarta ? cartas[i] : "reverso.jpg";
+                    <div class="card-container">
+                        <form asp-action="TocarCarta" method="post" class="m-1">
+                            <input type="hidden" name="index" value="@i" />
+                            <button type="submit" class="btn p-0 @(mostrarCarta ? "disabled" : "")" @(mostrarCarta ? "disabled" : "")>
+                                <img src="~/images/cartas/@imagenMostrar" class="carta-memotest" alt="Carta" />
+                            </button>
+                        </form>
+                    </div>
                 }
-            </div>
-
-            @if (encontradas?.Count == cartas?.Length)
-            {
-                <div class="text-center mt-4">
-                    <h3 class="text-success mb-3">¡Felicitaciones! Has encontrado todos los pares</h3>
-                    <a asp-action="Sala2" class="btn btn-primary btn-lg" id="btn-continuar-memotest">
-                        Continuar a la siguiente sala
-                    </a>
-                </div>
             }
         </div>
+        @if (encontradas?.Count == cartas?.Length)
+        {
+            <div class="text-center mt-4">
+                <h3>¡Felicitaciones! Has encontrado todos los pares</h3>
+                <a asp-action="Sala2" class="btn-primary" id="btn-continuar-memotest">
+                    Continuar a la siguiente sala
+                </a>
+            </div>
+        }
     </div>
 </div>
 
 <audio id="audio-carta" src="/audio/abrirCartaSound.mp3"></audio>
 <audio id="audio-victory" src="/audio/victory.mp3"></audio>
 
-<style>
-    .memotest-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .carta-memotest {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-    }
-
-    .card-container {
-        aspect-ratio: 3/4;
-    }
-
-    .btn:hover .carta-memotest {
-        transform: scale(1.05);
-    }
-
-    .btn.disabled {
-        cursor: default;
-    }
-
-    .btn.disabled .carta-memotest {
-        transform: none;
-    }
-
-    html, body {
-        height: 100% !important;
-        min-height: 100vh !important;
-    }
-
-    .fondo-memotest {
-        background-image: url('/img/fondoGeneral.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-        width: 100vw;
-    }
-</style>
-
-<div class="fondo-memotest">
 <script>
 document.querySelectorAll('.memotest-grid form').forEach(form => {
   form.addEventListener('submit', function(e) {
@@ -115,14 +58,18 @@ document.querySelectorAll('.memotest-grid form').forEach(form => {
     });
   });
 });
-// Sonido de victoria al ganar
+// Sonido de victoria al ganar y al hacer clic en continuar
 const btnContinuar = document.getElementById('btn-continuar-memotest');
 if (btnContinuar) {
-  document.getElementById('audio-victory').play();
+  // Reproducir sonido de victoria cuando aparece el botón
+  document.getElementById('audio-victory').play().catch(e => console.log('Audio no pudo reproducirse:', e));
+  // Reproducir sonido de victoria al hacer clic en continuar
   btnContinuar.addEventListener('click', function() {
     const audio = document.getElementById('audio-victory');
-    if (audio) { audio.currentTime = 0; audio.play(); }
+    if (audio) { 
+      audio.currentTime = 0; 
+      audio.play().catch(e => console.log('Audio no pudo reproducirse:', e));
+    }
   });
 }
 </script> 
-</div> 

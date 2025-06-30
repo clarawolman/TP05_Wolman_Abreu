@@ -70,16 +70,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/49359/OneDrive/Desktop/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala5.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhNS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/49359/OneDrive/Desktop/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/Sala6.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhNi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/49359/OneDrive/Desktop/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/SalaMemotest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhTWVtb3Rlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49359/OneDrive/Desktop/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Home/tiempoTerminado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0aWVtcG9UZXJtaW5hZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/49359/OneDrive/Desktop/TP05_Wolman_Abreu/TP05_Wolman_Abreu/Views/Shared/_Layout.cshtml]

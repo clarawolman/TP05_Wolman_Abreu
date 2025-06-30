@@ -3,10 +3,15 @@
 }
 
 <div class="sala-caliz">
-    <h2>Sala 2 - El Cáliz de Fuego</h2>
-    <p>Arrastrá tu nombre al cáliz para participar en el torneo.</p>
+    <h2>El Cáliz</h2>
+    <p>Arrastrá tu nombre al cáliz para jugar y seguir adelante.</p>
 
     <div class="drag-drop-container">
+        <form method="post" asp-action="Sala2Pociones" id="formResultado">
+            <button type="submit" class="frase-avanzar" style="display:none;">
+                acepta el desafío y se elegido
+            </button>
+        </form>
         <div id="nombrePapel" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)">
             <img src="/img/nombrePapel.png" alt="Tu nombre" class="nombre-papel">
         </div>
@@ -14,10 +19,6 @@
         <div id="dropArea" ondrop="drop(event)" ondragover="allowDrop(event)">
             <img src="/img/caliz.png" alt="Cáliz de Fuego" class="caliz-img">
         </div>
-        
-        <form method="post" asp-action="Sala2Pociones" id="formResultado">
-            <button type="submit" class="btn btn-primary btn-magic">acepta el desafío y se elegido</button>
-        </form>
     </div>
 </div>
 
@@ -44,11 +45,25 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     var draggedElement = document.getElementById(data);
-    
     if (data === "nombrePapel") {
         draggedElement.style.display = "none";
         document.getElementById("formResultado").classList.add("show");
         document.getElementById("dropArea").classList.add("highlight");
+        document.querySelector('.frase-avanzar').style.display = 'block';
     }
+}
+
+// Efecto de borde al hacer click
+const btnAvanzar = document.querySelector('.frase-avanzar');
+if(btnAvanzar) {
+    btnAvanzar.addEventListener('mousedown', function() {
+        btnAvanzar.classList.add('selected');
+    });
+    btnAvanzar.addEventListener('mouseup', function() {
+        btnAvanzar.classList.remove('selected');
+    });
+    btnAvanzar.addEventListener('mouseleave', function() {
+        btnAvanzar.classList.remove('selected');
+    });
 }
 </script>

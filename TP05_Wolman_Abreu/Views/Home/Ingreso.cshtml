@@ -7,7 +7,7 @@
     <p style="color:red;">@ViewBag.Error</p>
 }
 
-<div class="ingreso-container">
+<div class="ingreso-container hide-game-header">
     <div class="form-container">
         <form method="post" id="casaForm">
             <div class="mb-3">
@@ -42,47 +42,6 @@
         </form>
     </div>
 </div>
-
-<style>
-.escudos-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.escudo {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    border: 3px solid transparent;
-    border-radius: 8px;
-    padding: 0.5rem;
-}
-
-.escudo:hover {
-    transform: scale(1.05);
-}
-
-.escudo.selected {
-    border-color: #0d6efd;
-    background-color: rgba(13, 110, 253, 0.1);
-}
-
-.escudo-img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-.escudo-grande {
-    transform: scale(1.1);
-    margin-top: 10px;
-}
-
-.escudo-grande:hover {
-    transform: scale(1.15);
-}
-</style>
 
 <script>
 function seleccionarCasa(casa, elemento) {

@@ -1,9 +1,14 @@
 @{
-    ViewData["Title"] = "Victoria";
+    ViewData["Title"] = "¡Ganaste!";
 }
 
-<h2>¡Felicidades, Campeón del Torneo de los Tres Magos!</h2>
-<p>Has superado todas las salas y demostrado tu valentía, inteligencia y determinación.</p>
-<img src="/img/victoria.jpg" alt="Trofeo del Torneo" style="width:300px;" />
-<p>Gracias por jugar. Que la magia te acompañe siempre.</p>
-<a href="/Home/Index">Volver al inicio</a>
+<div class="hide-game-header ganaste-full-bg">
+    <div class="ganaste-overlay">
+        <div class="ganaste-texto">¡Felicidades, Mago o Bruja!</div>
+        <div class="ganaste-sub">Has superado todas las salas y demostrado tu valentía, inteligencia y determinación, encontrando el Huevo Dorado<br>¡Eres un verdadero mago de Hogwarts!</div>
+        <a href="/Home/Index" class="ganaste-btn">Volver al inicio</a>
+    </div>
+    <video class="ganaste-video-bg" autoplay muted loop>
+        <source src="/video/ganaste.mp4" type="video/mp4">
+    </video>
+</div>

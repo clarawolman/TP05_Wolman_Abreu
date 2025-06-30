@@ -3,11 +3,24 @@
 }
 
 <div class="sala-gryffindor">
-    <h2>Sala 1 - Gryffindor</h2>
+    <h2>Gryffindor</h2>
     <div class="row mt-4">
         <div class="col-12">
+            <p class="pista-libro">El conocimiento puede abrir puertas… si sabés cuál consultar.</p>
             <p>El coraje no es no tener miedo... es entrar igual.</p>
-            <a href='@Url.Action("SalaMemotest")' class="gryffindor-link"></a>
+            <a href='@Url.Action("SalaMemotest")' class="gryffindor-link" id="gryffindor-link"></a>
         </div>
     </div>
 </div>
+
+<audio id="audio-victory" src="/audio/victory.mp3"></audio>
+
+<script>
+document.getElementById('gryffindor-link').addEventListener('click', function() {
+    const audio = document.getElementById('audio-victory');
+    if(audio) { 
+        audio.currentTime = 0; 
+        audio.play().catch(e => console.log('Audio no pudo reproducirse:', e));
+    }
+});
+</script>

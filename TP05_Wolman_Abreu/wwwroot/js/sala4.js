@@ -1,7 +1,7 @@
 // Zonas y hechizos correctos
 const zonas = [
     {id:'cueva', correcto:'lumos'},
-    {id:'barco', correcto:'naufragio'},
+    {id:'barco', correcto:'reparo'},
     {id:'roca', correcto:'revelio'},
     {id:'algas', correcto:'herbivicus'},
     {id:'puerta', correcto:'alohomora'}
@@ -34,13 +34,14 @@ document.querySelectorAll('.zona').forEach(zona => {
         e.preventDefault();
         zona.style.background = '';
         if (dragging) {
-            zona.setAttribute('data-hechizo-colocado', dragging.getAttribute('data-hechizo'));
+            const hechizo = dragging.getAttribute('data-hechizo').toLowerCase().replace(/\s+/g, '');
+            zona.setAttribute('data-hechizo-colocado', hechizo);
             zona.querySelector('.hechizo-colocado')?.remove();
             const span = document.createElement('span');
             span.className = 'hechizo-colocado';
-            span.innerText = dragging.innerText;
+            span.innerText = dragging.innerText.trim();
             zona.appendChild(span);
-            hechizosColocados[zona.id] = dragging.getAttribute('data-hechizo');
+            hechizosColocados[zona.id] = hechizo;
             validarHechizos();
         }
     });
@@ -49,27 +50,34 @@ document.querySelectorAll('.zona').forEach(zona => {
 function validarHechizos() {
     let correctos = 0;
     let totalColocados = 0;
+    let errores = [];
     zonas.forEach(z => {
         const zonaElem = document.getElementById(z.id);
-        if (hechizosColocados[z.id] === z.correcto) {
+        const hechizoColocado = (zonaElem.getAttribute('data-hechizo-colocado') || '').toLowerCase().replace(/\s+/g, '');
+        const correcto = (z.correcto || '').toLowerCase().replace(/\s+/g, '');
+        if (hechizoColocado === correcto) {
             zonaElem.classList.add('correcta');
             zonaElem.classList.remove('incorrecta');
             correctos++;
-        } else if (hechizosColocados[z.id]) {
+        } else if (hechizoColocado) {
             zonaElem.classList.add('incorrecta');
             zonaElem.classList.remove('correcta');
+            errores.push(hechizoColocado);
             totalColocados++;
         } else {
             zonaElem.classList.remove('correcta','incorrecta');
         }
-        if (hechizosColocados[z.id]) totalColocados++;
+        if (hechizoColocado) totalColocados++;
     });
     if (totalColocados === zonas.length) {
         if (correctos === zonas.length) {
-            document.getElementById('feedback').innerHTML = '<b>¡Mapa completado! Ahora sigue la secuencia del duende acuático.</b>';
-            setTimeout(iniciarSecuencia, 1200);
+            document.getElementById('feedback').innerHTML = '<b style="color:#FFD700;font-size:1.2rem;">¡Perfecto! Has completado el mapa correctamente.</b>';
+            document.getElementById('audio-exito').play();
+            document.getElementById('audio-victory').play();
+            setTimeout(mostrarOverlayFelicidades, 1500);
         } else {
-            animacionError();
+            document.getElementById('feedback').innerHTML = '<span style="color:red">¡Magia fallida! Revisa: <br>' + errores.join('<br>') + '</span>';
+            setTimeout(animacionError, 1800);
         }
     }
 }
@@ -90,66 +98,6 @@ function animacionError() {
     }, 1500);
 }
 
-// Secuencia del duende acuático
-const secuenciaOpciones = ['lumos','naufragio','revelio','herbivicus','alohomora'];
-let secuencia = [];
-let respuestaSecuencia = [];
-function iniciarSecuencia() {
-    document.getElementById('secuencia-container').style.display = '';
-    secuencia = [];
-    respuestaSecuencia = [];
-    for(let i=0;i<3+Math.floor(Math.random()*2);i++){
-        secuencia.push(secuenciaOpciones[Math.floor(Math.random()*secuenciaOpciones.length)]);
-    }
-    mostrarSecuencia();
-    mostrarOpcionesSecuencia();
-}
-function mostrarSecuencia() {
-    const cont = document.getElementById('secuencia-hechizos');
-    cont.innerHTML = '';
-    secuencia.forEach(h => {
-        cont.innerHTML += `<img src="/images/hechizo_${h}.png" alt="?" />`;
-    });
-}
-function mostrarOpcionesSecuencia() {
-    const cont = document.getElementById('opciones-secuencia');
-    cont.innerHTML = '';
-    secuenciaOpciones.forEach(h => {
-        const img = document.createElement('img');
-        img.src = `/images/hechizo_${h}.png`;
-        img.alt = h;
-        img.onclick = () => seleccionarHechizoSecuencia(h, img);
-        cont.appendChild(img);
-    });
-}
-function seleccionarHechizoSecuencia(h, img) {
-    if(respuestaSecuencia.length>=secuencia.length) return;
-    respuestaSecuencia.push(h);
-    img.classList.add('selected');
-    if(respuestaSecuencia.length===secuencia.length){
-        validarSecuencia();
-    }
-}
-function validarSecuencia() {
-    let ok = true;
-    for(let i=0;i<secuencia.length;i++){
-        if(secuencia[i]!==respuestaSecuencia[i]) ok=false;
-    }
-    if(ok){
-        document.getElementById('audio-exito').play();
-        document.getElementById('audio-victory').play();
-        mostrarOverlayFelicidades();
-    }else{
-        document.getElementById('audio-error').play();
-        document.getElementById('feedback-secuencia').innerHTML = '<span style="color:red">¡Secuencia incorrecta! Intenta de nuevo.</span>';
-        setTimeout(()=>{
-            document.getElementById('feedback-secuencia').innerHTML = '';
-            respuestaSecuencia = [];
-            document.querySelectorAll('#opciones-secuencia img').forEach(img=>img.classList.remove('selected'));
-        }, 1500);
-    }
-}
-
 function mostrarOverlayFelicidades() {
     let overlay = document.createElement('div');
     overlay.id = 'felicidades-overlay';
@@ -167,19 +115,24 @@ function mostrarOverlayFelicidades() {
     overlay.style.zIndex = 9999;
     overlay.innerHTML = `
         <div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border-radius:22px;padding:40px 60px;text-align:center;box-shadow:0 0 30px #000a;">
-            <h2 style='color:#FFD700;font-family:HarryP,serif;font-size:2.2rem;margin-bottom:18px;'>¡Felicidades!</h2>
-            <p style='color:#fff;font-size:1.2rem;margin-bottom:28px;'>Completaste la sala 4.<br>¿Listo para continuar?</p>
-            <button id='btn-continuar-sala5' style='font-size:1.3rem;padding:16px 38px;border-radius:16px;background:#FFD700;color:#222;font-family:HarryP,serif;border:none;cursor:pointer;box-shadow:0 2px 12px #FFD70088;font-weight:bold;'>Continuar a la sala 5</button>
+            <h2 style='color:#FFD700;font-family:HarryP,serif;font-size:2.2rem;margin-bottom:18px;'>¡Has completado el mapa!</h2>
+            <p style='color:#fff;font-size:1.2rem;margin-bottom:28px;'>¡Eres un verdadero mago de Hogwarts!<br>Haz clic en el botón para ver tu recompensa.</p>
+            <a href="/Home/Ganaste" style='font-size:1.3rem;padding:16px 38px;border-radius:16px;background:#FFD700;color:#222;font-family:HarryP,serif;border:none;cursor:pointer;box-shadow:0 2px 12px #FFD70088;font-weight:bold;text-decoration:none;display:inline-block;transition:all 0.3s ease;'>¡Felicidades!</a>
         </div>
     `;
     document.body.appendChild(overlay);
-    document.getElementById('btn-continuar-sala5').onclick = function() {
-        window.location.href = '/Home/Sala5';
-    };
+    
+    // Agregar efecto hover al botón
+    const boton = overlay.querySelector('a');
+    boton.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+        this.style.boxShadow = '0 8px 25px rgba(255, 215, 0, 0.6)';
+    });
+    boton.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = '0 2px 12px #FFD70088';
+    });
 }
-
-// Opcional: CSS para que el hechizo colocado se vea bien
-// .hechizo-colocado { font-family: 'HarryP', serif; font-size: 1.1rem; color: #fff; text-shadow: 1px 1px 4px #000; } 
 
 // Al cargar, guarda el texto original de cada zona
 window.addEventListener('DOMContentLoaded', function() {

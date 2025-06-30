@@ -256,53 +256,18 @@ public IActionResult Sala2Pociones()
 
         public IActionResult Sala4()
         {
-            // if (!ValidarAcceso(4)) return RedirectToAction("Index"); // Desactivado para pruebas
+            if (!ValidarAcceso(4)) return RedirectToAction("Index");
             CargarDatosSala(4);
             return View();
         }
 
-        public IActionResult Sala5()
+        public IActionResult Ganaste()
         {
-            if (!ValidarAcceso(5)) return RedirectToAction("Index");
-            CargarDatosSala(5);
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Sala5(string respuesta)
+        public IActionResult tiempoTerminado()
         {
-            if (respuesta?.ToLower() == "wingardium leviosa")
-            {
-                HttpContext.Session.SetInt32("SalaActual", 6);
-                return RedirectToAction("Sala6");
-            }
-            ViewBag.Mensaje = "Respuesta incorrecta.";
-            CargarDatosSala(5);
-            return View();
-        }
-
-        public IActionResult Sala6()
-        {
-            if (!ValidarAcceso(6)) return RedirectToAction("Index");
-            CargarDatosSala(6);
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Sala6(string respuesta)
-        {
-            if (respuesta == "correcta")
-            {
-                HttpContext.Session.SetInt32("SalaActual", 7);
-                return RedirectToAction("Sala7");
-            }
-            ViewBag.Mensaje = "Secuencia incorrecta.";
-            CargarDatosSala(6);
-            return View();
-        }
-        public IActionResult Victoria()
-        {
-            if (!ValidarAcceso(7)) return RedirectToAction("Index");
             return View();
         }
     }
